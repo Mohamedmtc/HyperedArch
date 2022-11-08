@@ -1,0 +1,2071 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8996A7B4-57D3-440B-A545-A701844B8C4A}</ProjectGuid>
+    <ProjectType>Local</ProjectType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <OutputType>Library</OutputType>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>UMIS_VER2.AccessLayer.SqlClient</AssemblyName>
+    <AssemblyOriginatorKeyFile>..\UMIS_VER2.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>false</SignAssembly>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <RootNamespace>UMIS_VER2.AccessLayer.SqlClient</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>UMIS_VER2.AccessLayer.SqlClient.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>UMIS_VER2.AccessLayer.SqlClient.xml</DocumentationFile>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'GenerateDebug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>UMIS_VER2.AccessLayer.SqlClient.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Shared Binaries\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\Refrences\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Shared Binaries\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <!-- Custom code folder: D:\UMIS_VER2\UMIS_VER2.AccessLayer.SqlClient\App_Code -->
+  <ItemGroup>
+    <Compile Include="App_Code\**\*.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlAccomApartmentProvider.cs" />
+    <Compile Include="SqlAccomApartmentProviderBase.generated.cs" />
+    <Compile Include="SqlAccomBedProvider.cs" />
+    <Compile Include="SqlAccomBedProviderBase.generated.cs" />
+    <Compile Include="SqlAccomBuildingProvider.cs" />
+    <Compile Include="SqlAccomBuildingProviderBase.generated.cs" />
+    <Compile Include="SqlAccomCdeBookStatusProvider.cs" />
+    <Compile Include="SqlAccomCdeBookStatusProviderBase.generated.cs" />
+    <Compile Include="SqlAccomCdePermtTypeProvider.cs" />
+    <Compile Include="SqlAccomCdePermtTypeProviderBase.generated.cs" />
+    <Compile Include="SqlAccomCdePrecondProvider.cs" />
+    <Compile Include="SqlAccomCdePrecondProviderBase.generated.cs" />
+    <Compile Include="SqlAccomCdeRoomTypeProvider.cs" />
+    <Compile Include="SqlAccomCdeRoomTypeProviderBase.generated.cs" />
+    <Compile Include="SqlAccomCdeWarnProvider.cs" />
+    <Compile Include="SqlAccomCdeWarnProviderBase.generated.cs" />
+    <Compile Include="SqlAccomFloorProvider.cs" />
+    <Compile Include="SqlAccomFloorProviderBase.generated.cs" />
+    <Compile Include="SqlAccomPolcyAbsenceProvider.cs" />
+    <Compile Include="SqlAccomPolcyAbsenceProviderBase.generated.cs" />
+    <Compile Include="SqlAccomRoomProvider.cs" />
+    <Compile Include="SqlAccomRoomProviderBase.generated.cs" />
+    <Compile Include="SqlAccomStudAbsenceProvider.cs" />
+    <Compile Include="SqlAccomStudAbsenceProviderBase.generated.cs" />
+    <Compile Include="SqlAccomStudAbsenceWarnProvider.cs" />
+    <Compile Include="SqlAccomStudAbsenceWarnProviderBase.generated.cs" />
+    <Compile Include="SqlAccomStudBookProvider.cs" />
+    <Compile Include="SqlAccomStudBookProviderBase.generated.cs" />
+    <Compile Include="SqlAccomStudDismissProvider.cs" />
+    <Compile Include="SqlAccomStudDismissProviderBase.generated.cs" />
+    <Compile Include="SqlAccomStudFeedReqDtlProvider.cs" />
+    <Compile Include="SqlAccomStudFeedReqDtlProviderBase.generated.cs" />
+    <Compile Include="SqlAccomStudFeedReqProvider.cs" />
+    <Compile Include="SqlAccomStudFeedReqProviderBase.generated.cs" />
+    <Compile Include="SqlAccomStudGuestReqDtlProvider.cs" />
+    <Compile Include="SqlAccomStudGuestReqDtlProviderBase.generated.cs" />
+    <Compile Include="SqlAccomStudGuestReqProvider.cs" />
+    <Compile Include="SqlAccomStudGuestReqProviderBase.generated.cs" />
+    <Compile Include="SqlAccomStudLateProvider.cs" />
+    <Compile Include="SqlAccomStudLateProviderBase.generated.cs" />
+    <Compile Include="SqlAccomStudLeaveReqProvider.cs" />
+    <Compile Include="SqlAccomStudLeaveReqProviderBase.generated.cs" />
+    <Compile Include="SqlAccomStudPermtReqProvider.cs" />
+    <Compile Include="SqlAccomStudPermtReqProviderBase.generated.cs" />
+    <Compile Include="SqlAccomStudReqProvider.cs" />
+    <Compile Include="SqlAccomStudReqProviderBase.generated.cs" />
+    <Compile Include="SqlAccomStudResponsibleProvider.cs" />
+    <Compile Include="SqlAccomStudResponsibleProviderBase.generated.cs" />
+    <Compile Include="SqlAccomWfCdeActionProvider.cs" />
+    <Compile Include="SqlAccomWfCdeActionProviderBase.generated.cs" />
+    <Compile Include="SqlAccomWfCdeFunctionProvider.cs" />
+    <Compile Include="SqlAccomWfCdeFunctionProviderBase.generated.cs" />
+    <Compile Include="SqlAccomWfRequestApproveProvider.cs" />
+    <Compile Include="SqlAccomWfRequestApproveProviderBase.generated.cs" />
+    <Compile Include="SqlAccumStudDismissProvider.cs" />
+    <Compile Include="SqlAccumStudDismissProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAcceptanceCategoryProvider.cs" />
+    <Compile Include="SqlAdmAcceptanceCategoryProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAdmissionBandProvider.cs" />
+    <Compile Include="SqlAdmAdmissionBandProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppAlumniPrefProvider.cs" />
+    <Compile Include="SqlAdmAppAlumniPrefProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppDisabilityProvider.cs" />
+    <Compile Include="SqlAdmAppDisabilityProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppEssayProvider.cs" />
+    <Compile Include="SqlAdmAppEssayProviderBase.generated.cs">
+      <DependentUpon>SqlAdmAppEssayProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlAdmAppExmptCourseProvider.cs" />
+    <Compile Include="SqlAdmAppExmptCourseProviderBase.generated.cs">
+      <DependentUpon>SqlAdmAppExmptCourseProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlAdmAppFeePromocodeProvider.cs" />
+    <Compile Include="SqlAdmAppFeePromocodeProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppHonorAttchProvider.cs" />
+    <Compile Include="SqlAdmAppHonorAttchProviderBase.generated.cs">
+      <DependentUpon>SqlAdmAppHonorAttchProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlAdmAppHonorProvider.cs" />
+    <Compile Include="SqlAdmAppHonorProviderBase.generated.cs">
+      <DependentUpon>SqlAdmAppHonorProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlAdmAppInfoProvider.cs" />
+    <Compile Include="SqlAdmAppInfoProviderBase.generated.cs">
+      <DependentUpon>SqlAdmAppInfoProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlAdmAppInterviewExamProvider.cs" />
+    <Compile Include="SqlAdmAppInterviewExamProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppLanguagesDtlProvider.cs" />
+    <Compile Include="SqlAdmAppLanguagesDtlProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppLanguagesProvider.cs" />
+    <Compile Include="SqlAdmAppLanguagesProviderBase.generated.cs" />
+    <Compile Include="SqlAdmApplicantAcceptanceProvider.cs" />
+    <Compile Include="SqlAdmApplicantAcceptanceProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppMediaProvider.cs" />
+    <Compile Include="SqlAdmAppMediaProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppSponsorProvider.cs" />
+    <Compile Include="SqlAdmAppSponsorProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppTopicProvider.cs" />
+    <Compile Include="SqlAdmAppTopicProviderBase.generated.cs" />
+    <Compile Include="SqlAdmCdeAlumniPrefProvider.cs" />
+    <Compile Include="SqlAdmCdeAlumniPrefProviderBase.generated.cs" />
+    <Compile Include="SqlAdmCdeAppStatusProvider.cs" />
+    <Compile Include="SqlAdmCdeAppStatusProviderBase.generated.cs" />
+    <Compile Include="SqlAdmCdeEssayOptionProvider.cs" />
+    <Compile Include="SqlAdmCdeEssayOptionProviderBase.generated.cs">
+      <DependentUpon>SqlAdmCdeEssayOptionProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlAdmCdeExamGrdngProvider.cs" />
+    <Compile Include="SqlAdmCdeExamGrdngProviderBase.generated.cs">
+      <DependentUpon>SqlAdmCdeExamGrdngProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlAdmCdeMediaProvider.cs" />
+    <Compile Include="SqlAdmCdeMediaProviderBase.generated.cs" />
+    <Compile Include="SqlAdmCdeQualStatusProvider.cs" />
+    <Compile Include="SqlAdmCdeQualStatusProviderBase.generated.cs" />
+    <Compile Include="SqlAdmCdeStatusRsnProvider.cs" />
+    <Compile Include="SqlAdmCdeStatusRsnProviderBase.generated.cs" />
+    <Compile Include="SqlAdmCodeEngTestProvider.cs" />
+    <Compile Include="SqlAdmCodeEngTestProviderBase.generated.cs" />
+    <Compile Include="SqlAdmCodeMasteryProvider.cs" />
+    <Compile Include="SqlAdmCodeMasteryProviderBase.generated.cs" />
+    <Compile Include="SqlAdmCodeTransferTypeProvider.cs" />
+    <Compile Include="SqlAdmCodeTransferTypeProviderBase.generated.cs" />
+    <Compile Include="SqlAdmCompetitiveAvgProvider.cs" />
+    <Compile Include="SqlAdmCompetitiveAvgProviderBase.generated.cs" />
+    <Compile Include="SqlAdmDecisionStatusProvider.cs" />
+    <Compile Include="SqlAdmDecisionStatusProviderBase.generated.cs" />
+    <Compile Include="SqlAdmEnglishProficiencyProvider.cs" />
+    <Compile Include="SqlAdmEnglishProficiencyProviderBase.generated.cs" />
+    <Compile Include="SqlAdmExamGrdngPkgDtlProvider.cs" />
+    <Compile Include="SqlAdmExamGrdngPkgDtlProviderBase.generated.cs">
+      <DependentUpon>SqlAdmExamGrdngPkgDtlProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlAdmExamGrdngPkgProvider.cs" />
+    <Compile Include="SqlAdmExamGrdngPkgProviderBase.generated.cs">
+      <DependentUpon>SqlAdmExamGrdngPkgProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlAdmFeePromocodeProvider.cs" />
+    <Compile Include="SqlAdmFeePromocodeProviderBase.generated.cs" />
+    <Compile Include="SqlAdmFeeQualCatProvider.cs" />
+    <Compile Include="SqlAdmFeeQualCatProviderBase.generated.cs" />
+    <Compile Include="SqlAdmInboxProvider.cs" />
+    <Compile Include="SqlAdmInboxProviderBase.generated.cs" />
+    <Compile Include="SqlAdmIntTransferAcceptanceProvider.cs" />
+    <Compile Include="SqlAdmIntTransferAcceptanceProviderBase.generated.cs" />
+    <Compile Include="SqlAdmOutboxProvider.cs" />
+    <Compile Include="SqlAdmOutboxProviderBase.generated.cs" />
+    <Compile Include="SqlAdmParamMajorPhaseProvider.cs" />
+    <Compile Include="SqlAdmParamMajorPhaseProviderBase.generated.cs" />
+    <Compile Include="SqlAdmPlaceExamLocProvider.cs" />
+    <Compile Include="SqlAdmPlaceExamLocProviderBase.generated.cs" />
+    <Compile Include="SqlAdmRatingParametersMajorsProvider.cs" />
+    <Compile Include="SqlAdmRatingParametersMajorsProviderBase.generated.cs" />
+    <Compile Include="SqlAdmRatingParametersProvider.cs" />
+    <Compile Include="SqlAdmRatingParametersProviderBase.generated.cs" />
+    <Compile Include="SqlAdmRatingParamMajorTypeProvider.cs" />
+    <Compile Include="SqlAdmRatingParamMajorTypeProviderBase.generated.cs" />
+    <Compile Include="SqlAdmRegStepPayOnlineProvider.cs" />
+    <Compile Include="SqlAdmRegStepPayOnlineProviderBase.generated.cs" />
+    <Compile Include="SqlAdmRegStepsProvider.cs" />
+    <Compile Include="SqlAdmRegStepsProviderBase.generated.cs" />
+    <Compile Include="SqlAdmScholorshipProvider.cs" />
+    <Compile Include="SqlAdmScholorshipProviderBase.generated.cs" />
+    <Compile Include="SqlAdmSkillTypeProvider.cs" />
+    <Compile Include="SqlAdmSkillTypeProviderBase.generated.cs" />
+    <Compile Include="SqlAdmTansikAppCodesProvider.cs" />
+    <Compile Include="SqlAdmTansikAppCodesProviderBase.generated.cs" />
+    <Compile Include="SqlAdmTansikCodesProvider.cs" />
+    <Compile Include="SqlAdmTansikCodesProviderBase.generated.cs" />
+    <Compile Include="SqlAdmTansikMajorsCodesProvider.cs" />
+    <Compile Include="SqlAdmTansikMajorsCodesProviderBase.generated.cs" />
+    <Compile Include="SqlAdmTransAcceptanceCategoryProvider.cs" />
+    <Compile Include="SqlAdmTransAcceptanceCategoryProviderBase.generated.cs" />
+    <Compile Include="SqlAdmTransferAcceptanceProvider.cs" />
+    <Compile Include="SqlAdmTransferAcceptanceProviderBase.generated.cs" />
+    <Compile Include="SqlAlmJobProvider.cs" />
+    <Compile Include="SqlAlmJobProviderBase.generated.cs" />
+    <Compile Include="SqlAlmPrintRequestProvider.cs" />
+    <Compile Include="SqlAlmPrintRequestProviderBase.generated.cs" />
+    <Compile Include="SqlAppTypeRegStepsProvider.cs" />
+    <Compile Include="SqlAppTypeRegStepsProviderBase.generated.cs" />
+    <Compile Include="SqlCoClemRuleFacProvider.cs" />
+    <Compile Include="SqlCoClemRuleFacProviderBase.generated.cs" />
+    <Compile Include="SqlCoCrsRsltRaiseProvider.cs" />
+    <Compile Include="SqlCoCrsRsltRaiseProviderBase.generated.cs" />
+    <Compile Include="SqlCtrCdeExpRsnProvider.cs" />
+    <Compile Include="SqlCtrCdeExpRsnProviderBase.generated.cs" />
+    <Compile Include="SqlCtrCdeItemTypeProvider.cs" />
+    <Compile Include="SqlCtrCdeItemTypeProviderBase.generated.cs" />
+    <Compile Include="SqlCtrCdeKtchnJobProvider.cs" />
+    <Compile Include="SqlCtrCdeKtchnJobProviderBase.generated.cs" />
+    <Compile Include="SqlCtrCdeMealItemProvider.cs" />
+    <Compile Include="SqlCtrCdeMealItemProviderBase.generated.cs" />
+    <Compile Include="SqlCtrCdeMealProvider.cs" />
+    <Compile Include="SqlCtrCdeMealProviderBase.generated.cs" />
+    <Compile Include="SqlCtrCdeOutRsnProvider.cs" />
+    <Compile Include="SqlCtrCdeOutRsnProviderBase.generated.cs" />
+    <Compile Include="SqlCtrCdeSpclMealProvider.cs" />
+    <Compile Include="SqlCtrCdeSpclMealProviderBase.generated.cs" />
+    <Compile Include="SqlCtrCdeSrvcJobProvider.cs" />
+    <Compile Include="SqlCtrCdeSrvcJobProviderBase.generated.cs" />
+    <Compile Include="SqlCtrCdeSrvMthdProvider.cs" />
+    <Compile Include="SqlCtrCdeSrvMthdProviderBase.generated.cs" />
+    <Compile Include="SqlCtrCdeUnitProvider.cs" />
+    <Compile Include="SqlCtrCdeUnitProviderBase.generated.cs" />
+    <Compile Include="SqlCtrKtchnStfCrtfProvider.cs" />
+    <Compile Include="SqlCtrKtchnStfCrtfProviderBase.generated.cs" />
+    <Compile Include="SqlCtrMealItemProvider.cs" />
+    <Compile Include="SqlCtrMealItemProviderBase.generated.cs" />
+    <Compile Include="SqlCtrMenuActItemProvider.cs" />
+    <Compile Include="SqlCtrMenuActItemProviderBase.generated.cs" />
+    <Compile Include="SqlCtrMenuActProvider.cs" />
+    <Compile Include="SqlCtrMenuActProviderBase.generated.cs" />
+    <Compile Include="SqlCtrMenuItemProvider.cs" />
+    <Compile Include="SqlCtrMenuItemProviderBase.generated.cs" />
+    <Compile Include="SqlCtrMenuPlanProvider.cs" />
+    <Compile Include="SqlCtrMenuPlanProviderBase.generated.cs" />
+    <Compile Include="SqlCtrMenuProvider.cs" />
+    <Compile Include="SqlCtrMenuProviderBase.generated.cs" />
+    <Compile Include="SqlCtrSrvcCrewProvider.cs" />
+    <Compile Include="SqlCtrSrvcCrewProviderBase.generated.cs" />
+    <Compile Include="SqlCtrStudExpProvider.cs" />
+    <Compile Include="SqlCtrStudExpProviderBase.generated.cs" />
+    <Compile Include="SqlCtrStudOutProvider.cs" />
+    <Compile Include="SqlCtrStudOutProviderBase.generated.cs" />
+    <Compile Include="SqlEdAbsenceApproveProvider.cs" />
+    <Compile Include="SqlEdAbsenceApproveProviderBase.generated.cs" />
+    <Compile Include="SqlEdBranchCrsProvider.cs" />
+    <Compile Include="SqlEdBranchCrsProviderBase.generated.cs" />
+    <Compile Include="SqlEdCdeAcadWarnTypeProvider.cs" />
+    <Compile Include="SqlEdCdeAcadWarnTypeProviderBase.generated.cs" />
+    <Compile Include="SqlEdCdeCourseChngRsnProvider.cs" />
+    <Compile Include="SqlEdCdeCourseChngRsnProviderBase.generated.cs" />
+    <Compile Include="SqlEdCdeCrsRegTypeProvider.cs" />
+    <Compile Include="SqlEdCdeCrsRegTypeProviderBase.generated.cs" />
+    <Compile Include="SqlEdCdeEmpQualProvider.cs" />
+    <Compile Include="SqlEdCdeEmpQualProviderBase.generated.cs" />
+    <Compile Include="SqlEdCdeEnrollChngRsnProvider.cs" />
+    <Compile Include="SqlEdCdeEnrollChngRsnProviderBase.generated.cs" />
+    <Compile Include="SqlEdCdeExamSchdlTypeProvider.cs" />
+    <Compile Include="SqlEdCdeExamSchdlTypeProviderBase.generated.cs" />
+    <Compile Include="SqlEdCdeExamTypeProvider.cs" />
+    <Compile Include="SqlEdCdeExamTypeProviderBase.generated.cs" />
+    <Compile Include="SqlEdCdeExecuseRsnProvider.cs" />
+    <Compile Include="SqlEdCdeExecuseRsnProviderBase.generated.cs">
+      <DependentUpon>SqlEdCdeExecuseRsnProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlEdCdeExmptProvider.cs" />
+    <Compile Include="SqlEdCdeExmptProviderBase.generated.cs" />
+    <Compile Include="SqlEdCdeGrdChngRsnProvider.cs" />
+    <Compile Include="SqlEdCdeGrdChngRsnProviderBase.generated.cs" />
+    <Compile Include="SqlEdCdeOutcomeCatProvider.cs" />
+    <Compile Include="SqlEdCdeOutcomeCatProviderBase.generated.cs" />
+    <Compile Include="SqlEdCdeQualStatusProvider.cs" />
+    <Compile Include="SqlEdCdeQualStatusProviderBase.generated.cs" />
+    <Compile Include="SqlEdCdeSchoolGradeProvider.cs" />
+    <Compile Include="SqlEdCdeSchoolGradeProviderBase.generated.cs" />
+    <Compile Include="SqlEdCdeSocialAffairProvider.cs" />
+    <Compile Include="SqlEdCdeSocialAffairProviderBase.generated.cs" />
+    <Compile Include="SqlEdCdeStudTypeProvider.cs" />
+    <Compile Include="SqlEdCdeStudTypeProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeCheatRsltProvider.cs" />
+    <Compile Include="SqlEdCodeCheatRsltProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeCourseCaseProvider.cs" />
+    <Compile Include="SqlEdCodeCourseCaseProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeCourseTypeProvider.cs" />
+    <Compile Include="SqlEdCodeCourseTypeProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeQualGroupProvider.cs" />
+    <Compile Include="SqlEdCodeQualGroupProviderBase.generated.cs">
+      <DependentUpon>SqlEdCodeQualGroupProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlEdCodeQualSubjectProvider.cs" />
+    <Compile Include="SqlEdCodeQualSubjectProviderBase.generated.cs">
+      <DependentUpon>SqlEdCodeQualSubjectProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlEdCodeStudCaseProvider.cs" />
+    <Compile Include="SqlEdCodeStudCaseProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeSubjectProvider.cs" />
+    <Compile Include="SqlEdCodeSubjectProviderBase.generated.cs">
+      <DependentUpon>SqlEdCodeSubjectProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlEdCodeTrainEvalProvider.cs" />
+    <Compile Include="SqlEdCodeTrainEvalProviderBase.generated.cs" />
+    <Compile Include="SqlEdCourseInfoProvider.cs" />
+    <Compile Include="SqlEdCourseInfoProviderBase.generated.cs" />
+    <Compile Include="SqlEdCourseOutcomesDtlProvider.cs" />
+    <Compile Include="SqlEdCourseOutcomesDtlProviderBase.generated.cs" />
+    <Compile Include="SqlEdCourseOutcomesTopicsProvider.cs" />
+    <Compile Include="SqlEdCourseOutcomesTopicsProviderBase.generated.cs" />
+    <Compile Include="SqlEdCourseRltdProvider.cs" />
+    <Compile Include="SqlEdCourseRltdProviderBase.generated.cs" />
+    <Compile Include="SqlEdCourseTopicProvider.cs" />
+    <Compile Include="SqlEdCourseTopicProviderBase.generated.cs" />
+    <Compile Include="SqlEdCrsFreeRstrctdProvider.cs" />
+    <Compile Include="SqlEdCrsFreeRstrctdProviderBase.generated.cs" />
+    <Compile Include="SqlEdEmployeeQualProvider.cs" />
+    <Compile Include="SqlEdEmployeeQualProviderBase.generated.cs" />
+    <Compile Include="SqlEdExamCrsOrderProvider.cs" />
+    <Compile Include="SqlEdExamCrsOrderProviderBase.generated.cs" />
+    <Compile Include="SqlEdExamSuprvsorProvider.cs" />
+    <Compile Include="SqlEdExamSuprvsorProviderBase.generated.cs" />
+    <Compile Include="SqlEdGraduationAwardProvider.cs" />
+    <Compile Include="SqlEdGraduationAwardProviderBase.generated.cs" />
+    <Compile Include="SqlEdGuardProvider.cs" />
+    <Compile Include="SqlEdGuardProviderBase.generated.cs" />
+    <Compile Include="SqlEdOutcomeProvider.cs" />
+    <Compile Include="SqlEdOutcomeProviderBase.generated.cs" />
+    <Compile Include="SqlEdOutcomesTopicsProvider.cs" />
+    <Compile Include="SqlEdOutcomesTopicsProviderBase.generated.cs" />
+    <Compile Include="SqlEdPrintReqProvider.cs" />
+    <Compile Include="SqlEdPrintReqProviderBase.generated.cs">
+      <DependentUpon>SqlEdPrintReqProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlEdResultApproveProvider.cs" />
+    <Compile Include="SqlEdResultApproveProviderBase.generated.cs" />
+    <Compile Include="SqlEdSemAgendaFormProvider.cs" />
+    <Compile Include="SqlEdSemAgendaFormProviderBase.generated.cs" />
+    <Compile Include="SqlEdStaffDayPrefProvider.cs" />
+    <Compile Include="SqlEdStaffDayPrefProviderBase.generated.cs" />
+    <Compile Include="SqlEdStdCrsExamAssessProvider.cs" />
+    <Compile Include="SqlEdStdCrsExamAssessProviderBase.generated.cs" />
+    <Compile Include="SqlEdStdCrsExamProvider.cs" />
+    <Compile Include="SqlEdStdCrsExamProviderBase.generated.cs" />
+    <Compile Include="SqlEdStdExamSemesterProvider.cs" />
+    <Compile Include="SqlEdStdExamSemesterProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudActivityProvider.cs" />
+    <Compile Include="SqlEdStudActivityProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudActvtyRegProvider.cs" />
+    <Compile Include="SqlEdStudActvtyRegProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudCheatExecProvider.cs" />
+    <Compile Include="SqlEdStudCheatExecProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudCheatProvider.cs" />
+    <Compile Include="SqlEdStudCheatProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudCourseRegAddProvider.cs" />
+    <Compile Include="SqlEdStudCourseRegAddProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudCourseRegAssessSubProvider.cs" />
+    <Compile Include="SqlEdStudCourseRegAssessSubProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudCourseRegPolcyProvider.cs" />
+    <Compile Include="SqlEdStudCourseRegPolcyProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudCourseRegTopicProvider.cs" />
+    <Compile Include="SqlEdStudCourseRegTopicProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudCourseRplcProvider.cs" />
+    <Compile Include="SqlEdStudCourseRplcProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudExecuseReqProvider.cs" />
+    <Compile Include="SqlEdStudExecuseReqProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudExmptCrsFromProvider.cs" />
+    <Compile Include="SqlEdStudExmptCrsFromProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudExmptCrsToProvider.cs" />
+    <Compile Include="SqlEdStudExmptCrsToProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudExmptReqAttchProvider.cs" />
+    <Compile Include="SqlEdStudExmptReqAttchProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudExmptReqProvider.cs" />
+    <Compile Include="SqlEdStudExmptReqProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudGraduationAwardProvider.cs" />
+    <Compile Include="SqlEdStudGraduationAwardProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudGroupPreProvider.cs" />
+    <Compile Include="SqlEdStudGroupPreProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudLatenessProvider.cs" />
+    <Compile Include="SqlEdStudLatenessProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudMissionProvider.cs" />
+    <Compile Include="SqlEdStudMissionProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudMltryCrsProvider.cs" />
+    <Compile Include="SqlEdStudMltryCrsProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudQualGroupProvider.cs" />
+    <Compile Include="SqlEdStudQualGroupProviderBase.generated.cs">
+      <DependentUpon>SqlEdStudQualGroupProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlEdStudQualSubjectProvider.cs" />
+    <Compile Include="SqlEdStudQualSubjectProviderBase.generated.cs">
+      <DependentUpon>SqlEdStudQualSubjectProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlEdStudRsdncyProvider.cs" />
+    <Compile Include="SqlEdStudRsdncyProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudSemesterExtProvider.cs" />
+    <Compile Include="SqlEdStudSemesterExtProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudSemesterGroupProvider.cs" />
+    <Compile Include="SqlEdStudSemesterGroupProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudSemesterTempProvider.cs" />
+    <Compile Include="SqlEdStudSemesterTempProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudSportProvider.cs" />
+    <Compile Include="SqlEdStudSportProviderBase.generated.cs" />
+    <Compile Include="SqlEdTopicTchngProvider.cs" />
+    <Compile Include="SqlEdTopicTchngProviderBase.generated.cs" />
+    <Compile Include="SqlEntCoursePkgMdDataProvider.cs" />
+    <Compile Include="SqlEntCoursePkgMdDataProviderBase.generated.cs" />
+    <Compile Include="SqlEntMajorPhaseCrsExpProvider.cs" />
+    <Compile Include="SqlEntMajorPhaseCrsExpProviderBase.generated.cs" />
+    <Compile Include="SqlEntMajorPhaseProvider.cs" />
+    <Compile Include="SqlEntMajorPhaseProviderBase.generated.cs" />
+    <Compile Include="SqlEntPlcyAcadWarnDtlProvider.cs" />
+    <Compile Include="SqlEntPlcyAcadWarnDtlProviderBase.generated.cs" />
+    <Compile Include="SqlEntPlcyAcadWarnProvider.cs" />
+    <Compile Include="SqlEntPlcyAcadWarnProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolcyCrsRetakeProvider.cs" />
+    <Compile Include="SqlEntPolcyCrsRetakeProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolcyGpaProvider.cs" />
+    <Compile Include="SqlEntPolcyGpaProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolcyGrdngCourseProvider.cs" />
+    <Compile Include="SqlEntPolcyGrdngCourseProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolcyGrdngHdrProvider.cs" />
+    <Compile Include="SqlEntPolcyGrdngHdrProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolicyAssessGrpDtlProvider.cs" />
+    <Compile Include="SqlEntPolicyAssessGrpDtlProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolicyAssessGrpHdrProvider.cs" />
+    <Compile Include="SqlEntPolicyAssessGrpHdrProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolicyGradingLevelCoursesProvider.cs" />
+    <Compile Include="SqlEntPolicyGradingLevelCoursesProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolicyGradingLevelProvider.cs" />
+    <Compile Include="SqlEntPolicyGradingLevelProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolicySemHonorProvider.cs" />
+    <Compile Include="SqlEntPolicySemHonorProviderBase.generated.cs" />
+    <Compile Include="SqlErpEmpProvider.cs" />
+    <Compile Include="SqlErpEmpProviderBase.generated.cs" />
+    <Compile Include="SqlFeeAccntYearPeriodProvider.cs" />
+    <Compile Include="SqlFeeAccntYearPeriodProviderBase.generated.cs" />
+    <Compile Include="SqlFeeAccntYearProvider.cs" />
+    <Compile Include="SqlFeeAccntYearProviderBase.generated.cs" />
+    <Compile Include="SqlFeeAccomItemProvider.cs" />
+    <Compile Include="SqlFeeAccomItemProviderBase.generated.cs" />
+    <Compile Include="SqlFeeAllowanceRuleProvider.cs" />
+    <Compile Include="SqlFeeAllowanceRuleProviderBase.generated.cs" />
+    <Compile Include="SqlFeeBusLineItemProvider.cs" />
+    <Compile Include="SqlFeeBusLineItemProviderBase.generated.cs" />
+    <Compile Include="SqlFeeCdeAllowanceProvider.cs" />
+    <Compile Include="SqlFeeCdeAllowanceProviderBase.generated.cs" />
+    <Compile Include="SqlFeeCdeBankAccntProvider.cs" />
+    <Compile Include="SqlFeeCdeBankAccntProviderBase.generated.cs" />
+    <Compile Include="SqlFeeCdeBondItemProvider.cs" />
+    <Compile Include="SqlFeeCdeBondItemProviderBase.generated.cs" />
+    <Compile Include="SqlFeeCdeDiscCatProvider.cs" />
+    <Compile Include="SqlFeeCdeDiscCatProviderBase.generated.cs" />
+    <Compile Include="SqlFeeCdeFundProvider.cs" />
+    <Compile Include="SqlFeeCdeFundProviderBase.generated.cs" />
+    <Compile Include="SqlFeeCdeInvocStatusProvider.cs" />
+    <Compile Include="SqlFeeCdeInvocStatusProviderBase.generated.cs" />
+    <Compile Include="SqlFeeCdeLimitTypeProvider.cs" />
+    <Compile Include="SqlFeeCdeLimitTypeProviderBase.generated.cs" />
+    <Compile Include="SqlFeeCdeSchshipCatProvider.cs" />
+    <Compile Include="SqlFeeCdeSchshipCatProviderBase.generated.cs" />
+    <Compile Include="SqlFeeCdeSchshipTypeProvider.cs" />
+    <Compile Include="SqlFeeCdeSchshipTypeProviderBase.generated.cs">
+      <DependentUpon>SqlFeeCdeSchshipTypeProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlFeeCdeTrnsProvider.cs" />
+    <Compile Include="SqlFeeCdeTrnsProviderBase.generated.cs" />
+    <Compile Include="SqlFeeCdeTrsryProvider.cs" />
+    <Compile Include="SqlFeeCdeTrsryProviderBase.generated.cs" />
+    <Compile Include="SqlFeeCodeReasonsProvider.cs" />
+    <Compile Include="SqlFeeCodeReasonsProviderBase.generated.cs" />
+    <Compile Include="SqlFeeFineDtlProvider.cs" />
+    <Compile Include="SqlFeeFineDtlProviderBase.generated.cs" />
+    <Compile Include="SqlFeeFineProvider.cs" />
+    <Compile Include="SqlFeeFineProviderBase.generated.cs" />
+    <Compile Include="SqlFeeFundRuleProvider.cs" />
+    <Compile Include="SqlFeeFundRuleProviderBase.generated.cs" />
+    <Compile Include="SqlFeeInstlmntDtlProvider.cs" />
+    <Compile Include="SqlFeeInstlmntDtlProviderBase.generated.cs">
+      <DependentUpon>SqlFeeInstlmntDtlProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlFeeInstlmntRuleProvider.cs" />
+    <Compile Include="SqlFeeInstlmntRuleProviderBase.generated.cs">
+      <DependentUpon>SqlFeeInstlmntRuleProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlFeeInstlmntStudProvider.cs" />
+    <Compile Include="SqlFeeInstlmntStudProviderBase.generated.cs">
+      <DependentUpon>SqlFeeInstlmntStudProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlFeeIntegrationLedgerProvider.cs" />
+    <Compile Include="SqlFeeIntegrationLedgerProviderBase.generated.cs" />
+    <Compile Include="SqlFeeInvoiceItemProvider.cs" />
+    <Compile Include="SqlFeeInvoiceItemProviderBase.generated.cs" />
+    <Compile Include="SqlFeeInvoiceProvider.cs" />
+    <Compile Include="SqlFeeInvoiceProviderBase.generated.cs" />
+    <Compile Include="SqlFeeItemPaymentWaysProvider.cs" />
+    <Compile Include="SqlFeeItemPaymentWaysProviderBase.generated.cs" />
+    <Compile Include="SqlFeeItemSemesterProvider.cs" />
+    <Compile Include="SqlFeeItemSemesterProviderBase.generated.cs" />
+    <Compile Include="SqlFeeItemTrnsBlncProvider.cs" />
+    <Compile Include="SqlFeeItemTrnsBlncProviderBase.generated.cs" />
+    <Compile Include="SqlFeeLimitRuleProvider.cs" />
+    <Compile Include="SqlFeeLimitRuleProviderBase.generated.cs" />
+    <Compile Include="SqlFeeRefndStdDetProvider.cs" />
+    <Compile Include="SqlFeeRefndStdDetProviderBase.generated.cs" />
+    <Compile Include="SqlFeeRefndStdReqProvider.cs" />
+    <Compile Include="SqlFeeRefndStdReqProviderBase.generated.cs" />
+    <Compile Include="SqlFeeRefundCodeDtlProvider.cs" />
+    <Compile Include="SqlFeeRefundCodeDtlProviderBase.generated.cs" />
+    <Compile Include="SqlFeeScholarshipProvider.cs" />
+    <Compile Include="SqlFeeScholarshipProviderBase.generated.cs" />
+    <Compile Include="SqlFeeStudAllowanceProvider.cs" />
+    <Compile Include="SqlFeeStudAllowanceProviderBase.generated.cs" />
+    <Compile Include="SqlFeeStudBankProvider.cs" />
+    <Compile Include="SqlFeeStudBankProviderBase.generated.cs" />
+    <Compile Include="SqlFeeStudCoursesItemProvider.cs" />
+    <Compile Include="SqlFeeStudCoursesItemProviderBase.generated.cs" />
+    <Compile Include="SqlFeeStudDiscCodeItemProvider.cs" />
+    <Compile Include="SqlFeeStudDiscCodeItemProviderBase.generated.cs" />
+    <Compile Include="SqlFeeStudDiscContinueProvider.cs" />
+    <Compile Include="SqlFeeStudDiscContinueProviderBase.generated.cs" />
+    <Compile Include="SqlFeeStudDiscFeeItemProvider.cs" />
+    <Compile Include="SqlFeeStudDiscFeeItemProviderBase.generated.cs" />
+    <Compile Include="SqlFeeStudDiscSemesterProvider.cs" />
+    <Compile Include="SqlFeeStudDiscSemesterProviderBase.generated.cs" />
+    <Compile Include="SqlFeeStudFundProvider.cs" />
+    <Compile Include="SqlFeeStudFundProviderBase.generated.cs" />
+    <Compile Include="SqlFeeStudInstallmentProvider.cs" />
+    <Compile Include="SqlFeeStudInstallmentProviderBase.generated.cs" />
+    <Compile Include="SqlFeeStudInstallmentRequestProvider.cs" />
+    <Compile Include="SqlFeeStudInstallmentRequestProviderBase.generated.cs" />
+    <Compile Include="SqlFeeStudItemCnclProvider.cs" />
+    <Compile Include="SqlFeeStudItemCnclProviderBase.generated.cs" />
+    <Compile Include="SqlFeeStudNatSimilarityRequestProvider.cs" />
+    <Compile Include="SqlFeeStudNatSimilarityRequestProviderBase.generated.cs" />
+    <Compile Include="SqlFeeStudPayPostponeProvider.cs" />
+    <Compile Include="SqlFeeStudPayPostponeProviderBase.generated.cs" />
+    <Compile Include="SqlFeeStudRetrieveRequestProvider.cs" />
+    <Compile Include="SqlFeeStudRetrieveRequestProviderBase.generated.cs" />
+    <Compile Include="SqlFeeStudVoucherCrsItemProvider.cs" />
+    <Compile Include="SqlFeeStudVoucherCrsItemProviderBase.generated.cs" />
+    <Compile Include="SqlFeeStudVoucherPayMthodProvider.cs" />
+    <Compile Include="SqlFeeStudVoucherPayMthodProviderBase.generated.cs" />
+    <Compile Include="SqlFeeStudYearItemProvider.cs" />
+    <Compile Include="SqlFeeStudYearItemProviderBase.generated.cs" />
+    <Compile Include="SqlFeeTreasuryItemProvider.cs" />
+    <Compile Include="SqlFeeTreasuryItemProviderBase.generated.cs" />
+    <Compile Include="SqlFeeTreasuryProvider.cs" />
+    <Compile Include="SqlFeeTreasuryProviderBase.generated.cs" />
+    <Compile Include="SqlFeeTreasuryReqProvider.cs" />
+    <Compile Include="SqlFeeTreasuryReqProviderBase.generated.cs" />
+    <Compile Include="SqlFeeUserBondReqProvider.cs" />
+    <Compile Include="SqlFeeUserBondReqProviderBase.generated.cs" />
+    <Compile Include="SqlFeeUserFundReqProvider.cs" />
+    <Compile Include="SqlFeeUserFundReqProviderBase.generated.cs" />
+    <Compile Include="SqlFeeVoucherInvocProvider.cs" />
+    <Compile Include="SqlFeeVoucherInvocProviderBase.generated.cs" />
+    <Compile Include="SqlFeeYearPrdBankProvider.cs" />
+    <Compile Include="SqlFeeYearPrdBankProviderBase.generated.cs" />
+    <Compile Include="SqlGsAgendaHolidayProvider.cs" />
+    <Compile Include="SqlGsAgendaHolidayProviderBase.generated.cs" />
+    <Compile Include="SqlGsAttchdDocProvider.cs" />
+    <Compile Include="SqlGsAttchdDocProviderBase.generated.cs">
+      <DependentUpon>SqlGsAttchdDocProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlGsCdeActvtyProvider.cs" />
+    <Compile Include="SqlGsCdeActvtyProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeActvtyTypeProvider.cs" />
+    <Compile Include="SqlGsCdeActvtyTypeProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeApprovalPnltyProvider.cs" />
+    <Compile Include="SqlGsCdeApprovalPnltyProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeBloodProvider.cs" />
+    <Compile Include="SqlGsCdeBloodProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeDocProvider.cs" />
+    <Compile Include="SqlGsCdeDocProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeFacultyProvider.cs" />
+    <Compile Include="SqlGsCdeFacultyProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeHonorProvider.cs" />
+    <Compile Include="SqlGsCdeHonorProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeIncomeProvider.cs" />
+    <Compile Include="SqlGsCdeIncomeProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeOutcomeProvider.cs" />
+    <Compile Include="SqlGsCdeOutcomeProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdePenaltyRelatedProvider.cs" />
+    <Compile Include="SqlGsCdePenaltyRelatedProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeSchoolTypeProvider.cs" />
+    <Compile Include="SqlGsCdeSchoolTypeProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeSpecAreaProvider.cs" />
+    <Compile Include="SqlGsCdeSpecAreaProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeSportTypeProvider.cs" />
+    <Compile Include="SqlGsCdeSportTypeProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeUniversitiesProvider.cs" />
+    <Compile Include="SqlGsCdeUniversitiesProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeWeekDayGrpProvider.cs" />
+    <Compile Include="SqlGsCdeWeekDayGrpProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeDocTypeProvider.cs" />
+    <Compile Include="SqlGsCodeDocTypeProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeEducationLevelProvider.cs" />
+    <Compile Include="SqlGsCodeEducationLevelProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeGuardSupportLevelProvider.cs" />
+    <Compile Include="SqlGsCodeGuardSupportLevelProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeHouseStatProvider.cs" />
+    <Compile Include="SqlGsCodeHouseStatProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeHouseTypeProvider.cs" />
+    <Compile Include="SqlGsCodeHouseTypeProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodePayMthdTypeProvider.cs" />
+    <Compile Include="SqlGsCodePayMthdTypeProviderBase.generated.cs" />
+    <Compile Include="SqlGsCommDuttyProvider.cs" />
+    <Compile Include="SqlGsCommDuttyProviderBase.generated.cs" />
+    <Compile Include="SqlGsCommProvider.cs" />
+    <Compile Include="SqlGsCommProviderBase.generated.cs" />
+    <Compile Include="SqlGsCommPurposeProvider.cs" />
+    <Compile Include="SqlGsCommPurposeProviderBase.generated.cs" />
+    <Compile Include="SqlGsCommRecomProvider.cs" />
+    <Compile Include="SqlGsCommRecomProviderBase.generated.cs" />
+    <Compile Include="SqlGsCommStaffProvider.cs" />
+    <Compile Include="SqlGsCommStaffProviderBase.generated.cs" />
+    <Compile Include="SqlHrDepartmentProvider.cs" />
+    <Compile Include="SqlHrDepartmentProviderBase.generated.cs" />
+    <Compile Include="SqlIntegCdeErrorTypeProvider.cs" />
+    <Compile Include="SqlIntegCdeErrorTypeProviderBase.generated.cs" />
+    <Compile Include="SqlIntegFinanceProvider.cs" />
+    <Compile Include="SqlIntegFinanceProviderBase.generated.cs" />
+    <Compile Include="SqlIntegFpStaffAbsenceDtlProvider.cs" />
+    <Compile Include="SqlIntegFpStaffAbsenceDtlProviderBase.generated.cs" />
+    <Compile Include="SqlIntegFpStaffAbsenceProvider.cs" />
+    <Compile Include="SqlIntegFpStaffAbsenceProviderBase.generated.cs" />
+    <Compile Include="SqlIntegLogProvider.cs" />
+    <Compile Include="SqlIntegLogProviderBase.generated.cs" />
+    <Compile Include="SqlIntegMoodleEnrolProvider.cs" />
+    <Compile Include="SqlIntegMoodleEnrolProviderBase.generated.cs" />
+    <Compile Include="SqlIntegMoodleUnenrolProvider.cs" />
+    <Compile Include="SqlIntegMoodleUnenrolProviderBase.generated.cs" />
+    <Compile Include="SqlIntegMoodleUpdateStaffProvider.cs" />
+    <Compile Include="SqlIntegMoodleUpdateStaffProviderBase.generated.cs" />
+    <Compile Include="SqlIntegMoodleUpdateStudProvider.cs" />
+    <Compile Include="SqlIntegMoodleUpdateStudProviderBase.generated.cs" />
+    <Compile Include="SqlIntegPaymentUpayProvider.cs" />
+    <Compile Include="SqlIntegPaymentUpayProviderBase.generated.cs" />
+    <Compile Include="SqlIntegSemOpenCloseProvider.cs" />
+    <Compile Include="SqlIntegSemOpenCloseProviderBase.generated.cs" />
+    <Compile Include="SqlIntegUserAdLogDtlProvider.cs" />
+    <Compile Include="SqlIntegUserAdLogDtlProviderBase.generated.cs" />
+    <Compile Include="SqlIntegUserAdLogHdrProvider.cs" />
+    <Compile Include="SqlIntegUserAdLogHdrProviderBase.generated.cs" />
+    <Compile Include="SqlMdiCdeDiseaseProvider.cs" />
+    <Compile Include="SqlMdiCdeDiseaseProviderBase.generated.cs" />
+    <Compile Include="SqlMdiCdeHosptlProvider.cs" />
+    <Compile Include="SqlMdiCdeHosptlProviderBase.generated.cs" />
+    <Compile Include="SqlMdiCdeInvstgProvider.cs" />
+    <Compile Include="SqlMdiCdeInvstgProviderBase.generated.cs" />
+    <Compile Include="SqlMdiCdeLifeStyleProvider.cs" />
+    <Compile Include="SqlMdiCdeLifeStyleProviderBase.generated.cs" />
+    <Compile Include="SqlMdiCdeProblemProvider.cs" />
+    <Compile Include="SqlMdiCdeProblemProviderBase.generated.cs" />
+    <Compile Include="SqlMdiCdeSignCatProvider.cs" />
+    <Compile Include="SqlMdiCdeSignCatProviderBase.generated.cs" />
+    <Compile Include="SqlMdiCdeSignProvider.cs" />
+    <Compile Include="SqlMdiCdeSignProviderBase.generated.cs" />
+    <Compile Include="SqlMdiCdeVaccProvider.cs" />
+    <Compile Include="SqlMdiCdeVaccProviderBase.generated.cs" />
+    <Compile Include="SqlMdiStudClnqProvider.cs" />
+    <Compile Include="SqlMdiStudClnqProviderBase.generated.cs" />
+    <Compile Include="SqlMdiStudFamHstryProvider.cs" />
+    <Compile Include="SqlMdiStudFamHstryProviderBase.generated.cs" />
+    <Compile Include="SqlMdiStudHosptlProvider.cs" />
+    <Compile Include="SqlMdiStudHosptlProviderBase.generated.cs" />
+    <Compile Include="SqlMdiStudInvstgProvider.cs" />
+    <Compile Include="SqlMdiStudInvstgProviderBase.generated.cs" />
+    <Compile Include="SqlMdiStudLifeStyleProvider.cs" />
+    <Compile Include="SqlMdiStudLifeStyleProviderBase.generated.cs" />
+    <Compile Include="SqlMdiStudProblemProvider.cs" />
+    <Compile Include="SqlMdiStudProblemProviderBase.generated.cs" />
+    <Compile Include="SqlMdiStudRecordProvider.cs" />
+    <Compile Include="SqlMdiStudRecordProviderBase.generated.cs" />
+    <Compile Include="SqlMdiStudSignProvider.cs" />
+    <Compile Include="SqlMdiStudSignProviderBase.generated.cs" />
+    <Compile Include="SqlMdiStudVaccProvider.cs" />
+    <Compile Include="SqlMdiStudVaccProviderBase.generated.cs" />
+    <Compile Include="SqlMilCodeCourseProvider.cs" />
+    <Compile Include="SqlMilCodeCourseProviderBase.generated.cs" />
+    <Compile Include="SqlMltCdeBhvrAttndcRltdProvider.cs" />
+    <Compile Include="SqlMltCdeBhvrAttndcRltdProviderBase.generated.cs" />
+    <Compile Include="SqlMltCdeOrgTypeProvider.cs" />
+    <Compile Include="SqlMltCdeOrgTypeProviderBase.generated.cs" />
+    <Compile Include="SqlMltCdeOutRsnProvider.cs" />
+    <Compile Include="SqlMltCdeOutRsnProviderBase.generated.cs" />
+    <Compile Include="SqlMltCdeStudDegreeProvider.cs" />
+    <Compile Include="SqlMltCdeStudDegreeProviderBase.generated.cs" />
+    <Compile Include="SqlMltLvlBhvrAttndcProvider.cs" />
+    <Compile Include="SqlMltLvlBhvrAttndcProviderBase.generated.cs" />
+    <Compile Include="SqlMltOrgTreeProvider.cs" />
+    <Compile Include="SqlMltOrgTreeProviderBase.generated.cs" />
+    <Compile Include="SqlMltRptDayMissionProvider.cs" />
+    <Compile Include="SqlMltRptDayMissionProviderBase.generated.cs" />
+    <Compile Include="SqlMltRptDayOutProvider.cs" />
+    <Compile Include="SqlMltRptDayOutProviderBase.generated.cs" />
+    <Compile Include="SqlMltRptDayOutStudProvider.cs" />
+    <Compile Include="SqlMltRptDayOutStudProviderBase.generated.cs" />
+    <Compile Include="SqlMltRptDayStudStsProvider.cs" />
+    <Compile Include="SqlMltRptDayStudStsProviderBase.generated.cs" />
+    <Compile Include="SqlMltStudBhvrAttndcProvider.cs" />
+    <Compile Include="SqlMltStudBhvrAttndcProviderBase.generated.cs" />
+    <Compile Include="SqlMltStudInfoProvider.cs" />
+    <Compile Include="SqlMltStudInfoProviderBase.generated.cs" />
+    <Compile Include="SqlPgAttchdDocProvider.cs" />
+    <Compile Include="SqlPgAttchdDocProviderBase.generated.cs" />
+    <Compile Include="SqlPgCdeCommRecommendProvider.cs" />
+    <Compile Include="SqlPgCdeCommRecommendProviderBase.generated.cs" />
+    <Compile Include="SqlPgCdeConfTypeProvider.cs" />
+    <Compile Include="SqlPgCdeConfTypeProviderBase.generated.cs" />
+    <Compile Include="SqlPgCdeRptRecommendProvider.cs" />
+    <Compile Include="SqlPgCdeRptRecommendProviderBase.generated.cs" />
+    <Compile Include="SqlPgCdeStfRoleProvider.cs" />
+    <Compile Include="SqlPgCdeStfRoleProviderBase.generated.cs" />
+    <Compile Include="SqlPgCdeThesisStatusProvider.cs" />
+    <Compile Include="SqlPgCdeThesisStatusProviderBase.generated.cs" />
+    <Compile Include="SqlPgCodeChangeTypeProvider.cs" />
+    <Compile Include="SqlPgCodeChangeTypeProviderBase.generated.cs" />
+    <Compile Include="SqlPgCodeSupervisorChgRsnProvider.cs" />
+    <Compile Include="SqlPgCodeSupervisorChgRsnProviderBase.generated.cs" />
+    <Compile Include="SqlPgExtMemberProvider.cs" />
+    <Compile Include="SqlPgExtMemberProviderBase.generated.cs" />
+    <Compile Include="SqlPgOfferingProvider.cs" />
+    <Compile Include="SqlPgOfferingProviderBase.generated.cs" />
+    <Compile Include="SqlPgOfferingTopicProvider.cs" />
+    <Compile Include="SqlPgOfferingTopicProviderBase.generated.cs" />
+    <Compile Include="SqlPgStfRoleDegProvider.cs" />
+    <Compile Include="SqlPgStfRoleDegProviderBase.generated.cs" />
+    <Compile Include="SqlPgStudConferenceProvider.cs" />
+    <Compile Include="SqlPgStudConferenceProviderBase.generated.cs" />
+    <Compile Include="SqlPgStudPublishProvider.cs" />
+    <Compile Include="SqlPgStudPublishProviderBase.generated.cs" />
+    <Compile Include="SqlPgStudTravelExtendProvider.cs" />
+    <Compile Include="SqlPgStudTravelExtendProviderBase.generated.cs" />
+    <Compile Include="SqlPgStudTravelProvider.cs" />
+    <Compile Include="SqlPgStudTravelProviderBase.generated.cs" />
+    <Compile Include="SqlPgThesisCommApproveProvider.cs" />
+    <Compile Include="SqlPgThesisCommApproveProviderBase.generated.cs" />
+    <Compile Include="SqlPgThesisCommMemberProvider.cs" />
+    <Compile Include="SqlPgThesisCommMemberProviderBase.generated.cs" />
+    <Compile Include="SqlPgThesisCommProvider.cs" />
+    <Compile Include="SqlPgThesisCommProviderBase.generated.cs" />
+    <Compile Include="SqlPgThesisCommRecommendProvider.cs" />
+    <Compile Include="SqlPgThesisCommRecommendProviderBase.generated.cs" />
+    <Compile Include="SqlPgThesisCommRptProvider.cs" />
+    <Compile Include="SqlPgThesisCommRptProviderBase.generated.cs" />
+    <Compile Include="SqlPgThesisDiscussionDateProvider.cs" />
+    <Compile Include="SqlPgThesisDiscussionDateProviderBase.generated.cs" />
+    <Compile Include="SqlPgThesisGrantDegreeProvider.cs" />
+    <Compile Include="SqlPgThesisGrantDegreeProviderBase.generated.cs" />
+    <Compile Include="SqlPgThesisGrantStudProvider.cs" />
+    <Compile Include="SqlPgThesisGrantStudProviderBase.generated.cs" />
+    <Compile Include="SqlPgThesisNoteProvider.cs" />
+    <Compile Include="SqlPgThesisNoteProviderBase.generated.cs" />
+    <Compile Include="SqlPgThesisSeminarProvider.cs" />
+    <Compile Include="SqlPgThesisSeminarProviderBase.generated.cs" />
+    <Compile Include="SqlPgThesisStaffProvider.cs" />
+    <Compile Include="SqlPgThesisStaffProviderBase.generated.cs" />
+    <Compile Include="SqlPgThesisStudApproveProvider.cs" />
+    <Compile Include="SqlPgThesisStudApproveProviderBase.generated.cs" />
+    <Compile Include="SqlPgThesisStudExtendProvider.cs" />
+    <Compile Include="SqlPgThesisStudExtendProviderBase.generated.cs" />
+    <Compile Include="SqlPgThesisStudRsrchStrtgyProvider.cs" />
+    <Compile Include="SqlPgThesisStudRsrchStrtgyProviderBase.generated.cs" />
+    <Compile Include="SqlPgThesisStudTopicProvider.cs" />
+    <Compile Include="SqlPgThesisStudTopicProviderBase.generated.cs" />
+    <Compile Include="SqlPgThesisSupervisorCommApproveProvider.cs" />
+    <Compile Include="SqlPgThesisSupervisorCommApproveProviderBase.generated.cs" />
+    <Compile Include="SqlPgThesisSupervisorCommProvider.cs" />
+    <Compile Include="SqlPgThesisSupervisorCommProviderBase.generated.cs" />
+    <Compile Include="SqlPgThesisSupervisorRptProvider.cs" />
+    <Compile Include="SqlPgThesisSupervisorRptProviderBase.generated.cs" />
+    <Compile Include="SqlPgThesisValidityRptProvider.cs" />
+    <Compile Include="SqlPgThesisValidityRptProviderBase.generated.cs" />
+    <Compile Include="SqlRsrchCdeStatusProvider.cs" />
+    <Compile Include="SqlRsrchCdeStatusProviderBase.generated.cs" />
+    <Compile Include="SqlRsrchCdeTitleProvider.cs" />
+    <Compile Include="SqlRsrchCdeTitleProviderBase.generated.cs" />
+    <Compile Include="SqlRsrchCommStaffRecomProvider.cs" />
+    <Compile Include="SqlRsrchCommStaffRecomProviderBase.generated.cs" />
+    <Compile Include="SqlRsrchStudPostponeReqProvider.cs" />
+    <Compile Include="SqlRsrchStudPostponeReqProviderBase.generated.cs" />
+    <Compile Include="SqlRsrchStudRegisterDtlProvider.cs" />
+    <Compile Include="SqlRsrchStudRegisterDtlProviderBase.generated.cs" />
+    <Compile Include="SqlRsrchStudRegisterProvider.cs" />
+    <Compile Include="SqlRsrchStudRegisterProviderBase.generated.cs" />
+    <Compile Include="SqlSaCdeAdminJobProvider.cs" />
+    <Compile Include="SqlSaCdeAdminJobProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeDocTypeProvider.cs" />
+    <Compile Include="SqlSaCodeDocTypeProviderBase.generated.cs" />
+    <Compile Include="SqlSaStfDocProvider.cs" />
+    <Compile Include="SqlSaStfDocProviderBase.generated.cs" />
+    <Compile Include="SqlScCdeActvtyProvider.cs" />
+    <Compile Include="SqlScCdeActvtyProviderBase.generated.cs" />
+    <Compile Include="SqlScCdeGrpTypeProvider.cs" />
+    <Compile Include="SqlScCdeGrpTypeProviderBase.generated.cs" />
+    <Compile Include="SqlScGroupDayProvider.cs" />
+    <Compile Include="SqlScGroupDayProviderBase.generated.cs" />
+    <Compile Include="SqlScGroupInfoProvider.cs" />
+    <Compile Include="SqlScGroupInfoProviderBase.generated.cs" />
+    <Compile Include="SqlScGroupStaffProvider.cs" />
+    <Compile Include="SqlScGroupStaffProviderBase.generated.cs" />
+    <Compile Include="SqlScSchdlHdrProvider.cs" />
+    <Compile Include="SqlScSchdlHdrProviderBase.generated.cs" />
+    <Compile Include="SqlScSchdlPeriodProvider.cs" />
+    <Compile Include="SqlScSchdlPeriodProviderBase.generated.cs" />
+    <Compile Include="SqlScSchdlSlotProvider.cs" />
+    <Compile Include="SqlScSchdlSlotProviderBase.generated.cs" />
+    <Compile Include="SqlScSchdlSlotStaffProvider.cs" />
+    <Compile Include="SqlScSchdlSlotStaffProviderBase.generated.cs" />
+    <Compile Include="SqlScScheduleDtlDateProvider.cs" />
+    <Compile Include="SqlScScheduleDtlDateProviderBase.generated.cs" />
+    <Compile Include="SqlScScheduleDtlDayExceptionProvider.cs" />
+    <Compile Include="SqlScScheduleDtlDayExceptionProviderBase.generated.cs" />
+    <Compile Include="SqlScScheduleRsrvProvider.cs" />
+    <Compile Include="SqlScScheduleRsrvProviderBase.generated.cs" />
+    <Compile Include="SqlScSectionGroupDtlProvider.cs" />
+    <Compile Include="SqlScSectionGroupDtlProviderBase.generated.cs" />
+    <Compile Include="SqlScSectionGroupHdrProvider.cs" />
+    <Compile Include="SqlScSectionGroupHdrProviderBase.generated.cs" />
+    <Compile Include="SqlScStudGroupProvider.cs" />
+    <Compile Include="SqlScStudGroupProviderBase.generated.cs" />
+    <Compile Include="SqlScTchngDayProvider.cs" />
+    <Compile Include="SqlScTchngDayProviderBase.generated.cs" />
+    <Compile Include="SqlSeAccntControlDiffProvider.cs" />
+    <Compile Include="SqlSeAccntControlDiffProviderBase.generated.cs" />
+    <Compile Include="SqlSeAccntFormDiffProvider.cs" />
+    <Compile Include="SqlSeAccntFormDiffProviderBase.generated.cs" />
+    <Compile Include="SqlSeApplicationAuditProvider.cs" />
+    <Compile Include="SqlSeApplicationAuditProviderBase.generated.cs" />
+    <Compile Include="SqlSeBlockTransProvider.cs" />
+    <Compile Include="SqlSeBlockTransProviderBase.generated.cs" />
+    <Compile Include="SqlSeCdeBlockTypeProvider.cs" />
+    <Compile Include="SqlSeCdeBlockTypeProviderBase.generated.cs" />
+    <Compile Include="SqlSeStudTabControlProvider.cs" />
+    <Compile Include="SqlSeStudTabControlProviderBase.generated.cs" />
+    <Compile Include="SqlSeStudTabUserTypeControlProvider.cs" />
+    <Compile Include="SqlSeStudTabUserTypeControlProviderBase.generated.cs" />
+    <Compile Include="SqlSeUserAccntControlDiffProvider.cs" />
+    <Compile Include="SqlSeUserAccntControlDiffProviderBase.generated.cs" />
+    <Compile Include="SqlSeUserAccntDegProvider.cs" />
+    <Compile Include="SqlSeUserAccntDegProviderBase.generated.cs" />
+    <Compile Include="SqlSeUserCrsAssessProvider.cs" />
+    <Compile Include="SqlSeUserCrsAssessProviderBase.generated.cs" />
+    <Compile Include="SqlSpoContactProvider.cs" />
+    <Compile Include="SqlSpoContactProviderBase.generated.cs" />
+    <Compile Include="SqlSpoDepartmentProvider.cs" />
+    <Compile Include="SqlSpoDepartmentProviderBase.generated.cs" />
+    <Compile Include="SqlSpoOfferContinueProvider.cs" />
+    <Compile Include="SqlSpoOfferContinueProviderBase.generated.cs" />
+    <Compile Include="SqlSpoOfferStudExceptionProvider.cs" />
+    <Compile Include="SqlSpoOfferStudExceptionProviderBase.generated.cs" />
+    <Compile Include="SqlSpoResponsiblePersonProvider.cs" />
+    <Compile Include="SqlSpoResponsiblePersonProviderBase.generated.cs" />
+    <Compile Include="SqlSpoSponsorFeeItemProvider.cs" />
+    <Compile Include="SqlSpoSponsorFeeItemProviderBase.generated.cs" />
+    <Compile Include="SqlSpoSponsorOfferExtProvider.cs" />
+    <Compile Include="SqlSpoSponsorOfferExtProviderBase.generated.cs" />
+    <Compile Include="SqlSpoSponsorOfferProvider.cs" />
+    <Compile Include="SqlSpoSponsorOfferProviderBase.generated.cs" />
+    <Compile Include="SqlSpoSponsorProvider.cs" />
+    <Compile Include="SqlSpoSponsorProviderBase.generated.cs" />
+    <Compile Include="SqlSpoSponsorStudProvider.cs" />
+    <Compile Include="SqlSpoSponsorStudProviderBase.generated.cs" />
+    <Compile Include="SqlSpoSponsorStudSemesterProvider.cs" />
+    <Compile Include="SqlSpoSponsorStudSemesterProviderBase.generated.cs" />
+    <Compile Include="SqlSpoSponsorTypeProvider.cs" />
+    <Compile Include="SqlSpoSponsorTypeProviderBase.generated.cs" />
+    <Compile Include="SqlSpoStudFeeItemProvider.cs" />
+    <Compile Include="SqlSpoStudFeeItemProviderBase.generated.cs" />
+    <Compile Include="SqlSvAutoMsgTmpltProvider.cs" />
+    <Compile Include="SqlSvAutoMsgTmpltProviderBase.generated.cs" />
+    <Compile Include="SqlSvCdeCompReplyProvider.cs" />
+    <Compile Include="SqlSvCdeCompReplyProviderBase.generated.cs" />
+    <Compile Include="SqlSvCdeDeviceTypeProvider.cs" />
+    <Compile Include="SqlSvCdeDeviceTypeProviderBase.generated.cs" />
+    <Compile Include="SqlSvCdeEvalExtProvider.cs" />
+    <Compile Include="SqlSvCdeEvalExtProviderBase.generated.cs" />
+    <Compile Include="SqlSvCdeEvalItemHdrProvider.cs" />
+    <Compile Include="SqlSvCdeEvalItemHdrProviderBase.generated.cs" />
+    <Compile Include="SqlSvCdeMsgParamProvider.cs" />
+    <Compile Include="SqlSvCdeMsgParamProviderBase.generated.cs">
+      <DependentUpon>SqlSvCdeMsgParamProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlSvCdeQstnTypeProvider.cs" />
+    <Compile Include="SqlSvCdeQstnTypeProviderBase.generated.cs">
+      <DependentUpon>SqlSvCdeQstnTypeProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlSvCdeSrvyTypeProvider.cs" />
+    <Compile Include="SqlSvCdeSrvyTypeProviderBase.generated.cs">
+      <DependentUpon>SqlSvCdeSrvyTypeProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlSvCdeTaskStatusProvider.cs" />
+    <Compile Include="SqlSvCdeTaskStatusProviderBase.generated.cs" />
+    <Compile Include="SqlSvCourseEvalExtProvider.cs" />
+    <Compile Include="SqlSvCourseEvalExtProviderBase.generated.cs" />
+    <Compile Include="SqlSvMessageSendPrvProvider.cs" />
+    <Compile Include="SqlSvMessageSendPrvProviderBase.generated.cs" />
+    <Compile Include="SqlSvMsgTmpltParamProvider.cs" />
+    <Compile Include="SqlSvMsgTmpltParamProviderBase.generated.cs" />
+    <Compile Include="SqlSvSrvyAnswrProvider.cs" />
+    <Compile Include="SqlSvSrvyAnswrProviderBase.generated.cs">
+      <DependentUpon>SqlSvSrvyAnswrProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlSvSrvyHdrProvider.cs" />
+    <Compile Include="SqlSvSrvyHdrProviderBase.generated.cs">
+      <DependentUpon>SqlSvSrvyHdrProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlSvSrvyQstnProvider.cs" />
+    <Compile Include="SqlSvSrvyQstnProviderBase.generated.cs">
+      <DependentUpon>SqlSvSrvyQstnProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlSvSrvyRespondAnswrProvider.cs" />
+    <Compile Include="SqlSvSrvyRespondAnswrProviderBase.generated.cs">
+      <DependentUpon>SqlSvSrvyRespondAnswrProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlSvSrvyRespondQstnProvider.cs" />
+    <Compile Include="SqlSvSrvyRespondQstnProviderBase.generated.cs">
+      <DependentUpon>SqlSvSrvyRespondQstnProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlSvStaffEvalExtProvider.cs" />
+    <Compile Include="SqlSvStaffEvalExtProviderBase.generated.cs" />
+    <Compile Include="SqlSvStaffPollProvider.cs" />
+    <Compile Include="SqlSvStaffPollProviderBase.generated.cs" />
+    <Compile Include="SqlSvStudCourseEvalExtProvider.cs" />
+    <Compile Include="SqlSvStudCourseEvalExtProviderBase.generated.cs" />
+    <Compile Include="SqlSvStudStaffEvalExtProvider.cs" />
+    <Compile Include="SqlSvStudStaffEvalExtProviderBase.generated.cs" />
+    <Compile Include="SqlSvUserMobTokenProvider.cs" />
+    <Compile Include="SqlSvUserMobTokenProviderBase.generated.cs" />
+    <Compile Include="SqlSvUserRefreshTokenProvider.cs" />
+    <Compile Include="SqlSvUserRefreshTokenProviderBase.generated.cs" />
+    <Compile Include="SqlSvUserTaskProvider.cs" />
+    <Compile Include="SqlSvUserTaskProviderBase.generated.cs" />
+    <Compile Include="SqlSysFormControlProvider.cs" />
+    <Compile Include="SqlSysFormControlProviderBase.generated.cs" />
+    <Compile Include="SqlSysFormProvider.cs" />
+    <Compile Include="SqlSysFormProviderBase.generated.cs" />
+    <Compile Include="SqlSysMessagesProvider.cs" />
+    <Compile Include="SqlSysMessagesProviderBase.generated.cs" />
+    <Compile Include="SqlSysParamProvider.cs" />
+    <Compile Include="SqlSysParamProviderBase.generated.cs" />
+    <Compile Include="SqlSysServiceProvider.cs" />
+    <Compile Include="SqlSysServiceProviderBase.generated.cs" />
+    <Compile Include="SqlWfCdeActionProvider.cs" />
+    <Compile Include="SqlWfCdeActionProviderBase.generated.cs" />
+    <Compile Include="SqlWfCdeFunctionProvider.cs" />
+    <Compile Include="SqlWfCdeFunctionProviderBase.generated.cs" />
+    <Compile Include="SqlWfCrsRsltApproveProvider.cs" />
+    <Compile Include="SqlWfCrsRsltApproveProviderBase.generated.cs" />
+    <Compile Include="Views\SqlAppFeeViewProvider.cs" />
+    <Compile Include="Views\SqlAppFeeViewProviderBase.generated.cs" />
+    <Compile Include="Views\SqlApplicantPlacementExamViewProvider.cs" />
+    <Compile Include="Views\SqlApplicantPlacementExamViewProviderBase.generated.cs" />
+    <Compile Include="Views\SqlApplicantRequiredDocumentViewProvider.cs" />
+    <Compile Include="Views\SqlApplicantRequiredDocumentViewProviderBase.generated.cs" />
+    <Compile Include="Views\SqlApplicantStepsViewProvider.cs" />
+    <Compile Include="Views\SqlApplicantStepsViewProviderBase.generated.cs" />
+    <Compile Include="Views\SqlCoursePkgProvider.cs" />
+    <Compile Include="Views\SqlCoursePkgProviderBase.generated.cs">
+      <DependentUpon>Views\SqlCoursePkgProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\SqlGetAllTransactionFeesViewB415102017Provider.cs" />
+    <Compile Include="Views\SqlGetAllTransactionFeesViewB415102017ProviderBase.generated.cs">
+      <DependentUpon>Views\SqlGetAllTransactionFeesViewB415102017Provider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\SqlGetAllTransactionFeesViewProvider.cs" />
+    <Compile Include="Views\SqlGetAllTransactionFeesViewProviderBase.generated.cs">
+      <DependentUpon>Views\SqlGetAllTransactionFeesViewProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\SqlModulesTreeViewProvider.cs" />
+    <Compile Include="Views\SqlModulesTreeViewProviderBase.generated.cs" />
+    <Compile Include="Views\SqlStaffAcademicLoadsProvider.cs" />
+    <Compile Include="Views\SqlStaffAcademicLoadsProviderBase.generated.cs" />
+    <Compile Include="Views\SqlTeachingLoadDistributionPerProgramProvider.cs" />
+    <Compile Include="Views\SqlTeachingLoadDistributionPerProgramProviderBase.generated.cs" />
+    <Compile Include="Views\SqlVmGetOfferingInCurrentAcadYearSemesterProvider.cs" />
+    <Compile Include="Views\SqlVmGetOfferingInCurrentAcadYearSemesterProviderBase.generated.cs" />
+    <Compile Include="Views\SqlVscheduleCoursesProvider.cs" />
+    <Compile Include="Views\SqlVscheduleCoursesProviderBase.generated.cs" />
+    <Compile Include="Views\SqlVuCourseAssessProvider.cs" />
+    <Compile Include="Views\SqlVuCourseAssessProviderBase.generated.cs" />
+    <Compile Include="Views\SqlVwGetAcadmicPlanCoursesProvider.cs" />
+    <Compile Include="Views\SqlVwGetAcadmicPlanCoursesProviderBase.generated.cs" />
+    <Compile Include="Views\SqlVwGetUniversityRequirementsCoursesProvider.cs" />
+    <Compile Include="Views\SqlVwGetUniversityRequirementsCoursesProviderBase.generated.cs" />
+    <Compile Include="Views\SqlVwSelectDegreeAfterApplyRepeateRuleProvider.cs" />
+    <Compile Include="Views\SqlVwSelectDegreeAfterApplyRepeateRuleProviderBase.generated.cs" />
+    <Compile Include="Views\SqlVwSelectStudRemainCourseProvider.cs" />
+    <Compile Include="Views\SqlVwSelectStudRemainCourseProviderBase.generated.cs" />
+    <Compile Include="Views\SqlVwSelectTotalCrsHrsRegProvider.cs" />
+    <Compile Include="Views\SqlVwSelectTotalCrsHrsRegProviderBase.generated.cs" />
+  </ItemGroup>
+  <!-- Include any user files -->
+  <ItemGroup>
+    <Compile Include="**\*.user.*" Exclude="**\*.csproj.user;**\.svn\**">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SqlAdmAppCountProvider.cs" />
+    <Compile Include="SqlAdmAppCountProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppCourseCompProvider.cs" />
+    <Compile Include="SqlAdmAppCourseCompProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppDocProvider.cs" />
+    <Compile Include="SqlAdmAppDocProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppFeesProvider.cs" />
+    <Compile Include="SqlAdmAppFeesProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppGuardianProvider.cs" />
+    <Compile Include="SqlAdmAppGuardianProviderBase.generated.cs" />
+    <Compile Include="SqlAdmApplicantProvider.cs" />
+    <Compile Include="SqlAdmApplicantProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppLtrRecomProvider.cs" />
+    <Compile Include="SqlAdmAppLtrRecomProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppMessageProvider.cs" />
+    <Compile Include="SqlAdmAppMessageProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppPlaceExamCourseProvider.cs" />
+    <Compile Include="SqlAdmAppPlaceExamCourseProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppPlacementExamProvider.cs" />
+    <Compile Include="SqlAdmAppPlacementExamProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppPrefProvider.cs" />
+    <Compile Include="SqlAdmAppPrefProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppProcStepsProvider.cs" />
+    <Compile Include="SqlAdmAppProcStepsProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppRegHistoryProvider.cs" />
+    <Compile Include="SqlAdmAppRegHistoryProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppSchoolInfoProvider.cs" />
+    <Compile Include="SqlAdmAppSchoolInfoProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppTransBalanceProvider.cs" />
+    <Compile Include="SqlAdmAppTransBalanceProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppTransFromCourseProvider.cs" />
+    <Compile Include="SqlAdmAppTransFromCourseProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppTransReqProvider.cs" />
+    <Compile Include="SqlAdmAppTransReqProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppTransToCourseProvider.cs" />
+    <Compile Include="SqlAdmAppTransToCourseProviderBase.generated.cs" />
+    <Compile Include="SqlAdmAppWorkExperProvider.cs" />
+    <Compile Include="SqlAdmAppWorkExperProviderBase.generated.cs" />
+    <Compile Include="SqlAdmCdeAppTypeProvider.cs" />
+    <Compile Include="SqlAdmCdeAppTypeProviderBase.generated.cs" />
+    <Compile Include="SqlAdmCdeCourseCompProvider.cs" />
+    <Compile Include="SqlAdmCdeCourseCompProviderBase.generated.cs" />
+    <Compile Include="SqlAdmCdeFeeProvider.cs" />
+    <Compile Include="SqlAdmCdeFeeProviderBase.generated.cs" />
+    <Compile Include="SqlAdmCdePlacementExamProvider.cs" />
+    <Compile Include="SqlAdmCdePlacementExamProviderBase.generated.cs" />
+    <Compile Include="SqlAdmCdeStatusProvider.cs" />
+    <Compile Include="SqlAdmCdeStatusProviderBase.generated.cs" />
+    <Compile Include="SqlAdmCdeTypeProvider.cs" />
+    <Compile Include="SqlAdmCdeTypeProviderBase.generated.cs" />
+    <Compile Include="SqlAdmOpenAcadSemesterProvider.cs" />
+    <Compile Include="SqlAdmOpenAcadSemesterProviderBase.generated.cs" />
+    <Compile Include="SqlAdmParamProvider.cs" />
+    <Compile Include="SqlAdmParamProviderBase.generated.cs" />
+    <Compile Include="SqlAdmPlaceExamCourseProvider.cs" />
+    <Compile Include="SqlAdmPlaceExamCourseProviderBase.generated.cs" />
+    <Compile Include="SqlAdmPlaceExamDatetimeProvider.cs" />
+    <Compile Include="SqlAdmPlaceExamDatetimeProviderBase.generated.cs" />
+    <Compile Include="SqlAdmPrecondQualProvider.cs" />
+    <Compile Include="SqlAdmPrecondQualProviderBase.generated.cs" />
+    <Compile Include="SqlAdmReqDocProvider.cs" />
+    <Compile Include="SqlAdmReqDocProviderBase.generated.cs" />
+    <Compile Include="SqlAdmRsrvdCodeProvider.cs" />
+    <Compile Include="SqlAdmRsrvdCodeProviderBase.generated.cs" />
+    <Compile Include="SqlAdmStaticScholarshipProvider.cs" />
+    <Compile Include="SqlAdmStaticScholarshipProviderBase.generated.cs" />
+    <Compile Include="SqlAsCodeDegreeClassProvider.cs" />
+    <Compile Include="SqlAsCodeDegreeClassProviderBase.generated.cs" />
+    <Compile Include="SqlAsCodeDegreeProvider.cs" />
+    <Compile Include="SqlAsCodeDegreeProviderBase.generated.cs" />
+    <Compile Include="SqlAsFacultyInfoProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlAsFacultyInfoProviderBase.generated.cs">
+      <DependentUpon>SqlAsFacultyInfoProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlCoContRmMemCourseProvider.cs" />
+    <Compile Include="SqlCoContRmMemCourseProviderBase.generated.cs" />
+    <Compile Include="SqlCoControlMemberProvider.cs" />
+    <Compile Include="SqlCoControlMemberProviderBase.generated.cs" />
+    <Compile Include="SqlCoControlProvider.cs" />
+    <Compile Include="SqlCoControlProviderBase.generated.cs" />
+    <Compile Include="SqlCoControlRoomProvider.cs" />
+    <Compile Include="SqlCoControlRoomProviderBase.generated.cs" />
+    <Compile Include="SqlCoContRoomMemberProvider.cs" />
+    <Compile Include="SqlCoContRoomMemberProviderBase.generated.cs" />
+    <Compile Include="SqlCoCourseResultProvider.cs" />
+    <Compile Include="SqlCoCourseResultProviderBase.generated.cs" />
+    <Compile Include="SqlCoExamCommitteeProvider.cs" />
+    <Compile Include="SqlCoExamCommitteeProviderBase.generated.cs" />
+    <Compile Include="SqlCoExamCommSupervisorAltProvider.cs" />
+    <Compile Include="SqlCoExamCommSupervisorAltProviderBase.generated.cs" />
+    <Compile Include="SqlCoExamCommSupervisorProvider.cs" />
+    <Compile Include="SqlCoExamCommSupervisorProviderBase.generated.cs" />
+    <Compile Include="SqlCoExaminerCorectorProvider.cs" />
+    <Compile Include="SqlCoExaminerCorectorProviderBase.generated.cs" />
+    <Compile Include="SqlCoExamPaperProvider.cs" />
+    <Compile Include="SqlCoExamPaperProviderBase.generated.cs" />
+    <Compile Include="SqlCoExamPlaceStudProvider.cs" />
+    <Compile Include="SqlCoExamPlaceStudProviderBase.generated.cs" />
+    <Compile Include="SqlCoExamSchdlPlaceProvider.cs" />
+    <Compile Include="SqlCoExamSchdlPlaceProviderBase.generated.cs" />
+    <Compile Include="SqlCoScheduleDetailProvider.cs" />
+    <Compile Include="SqlCoScheduleDetailProviderBase.generated.cs" />
+    <Compile Include="SqlCoStudCheatProvider.cs" />
+    <Compile Include="SqlCoStudCheatProviderBase.generated.cs" />
+    <Compile Include="SqlCoStudSecretNumProvider.cs" />
+    <Compile Include="SqlCoStudSecretNumProviderBase.generated.cs" />
+    <Compile Include="SqlCoSupervisorStudCountProvider.cs" />
+    <Compile Include="SqlCoSupervisorStudCountProviderBase.generated.cs" />
+    <Compile Include="SqlEdAcadPlanDtlProvider.cs" />
+    <Compile Include="SqlEdAcadPlanDtlProviderBase.generated.cs" />
+    <Compile Include="SqlEdAcadPlanHdrProvider.cs" />
+    <Compile Include="SqlEdAcadPlanHdrProviderBase.generated.cs" />
+    <Compile Include="SqlEdAcadPlanProvider.cs" />
+    <Compile Include="SqlEdAcadPlanProviderBase.generated.cs" />
+    <Compile Include="SqlEdAcadYearFacultyProvider.cs" />
+    <Compile Include="SqlEdAcadYearFacultyProviderBase.generated.cs" />
+    <Compile Include="SqlEdAcadYearProvider.cs" />
+    <Compile Include="SqlEdAcadYearProviderBase.generated.cs" />
+    <Compile Include="SqlEdAcdadvRmkProvider.cs" />
+    <Compile Include="SqlEdAcdadvRmkProviderBase.generated.cs" />
+    <Compile Include="SqlEdBranchRuleProvider.cs" />
+    <Compile Include="SqlEdBranchRuleProviderBase.generated.cs" />
+    <Compile Include="SqlEdBylawProvider.cs" />
+    <Compile Include="SqlEdBylawProviderBase.generated.cs" />
+    <Compile Include="SqlEdCdeQualBrnProvider.cs" />
+    <Compile Include="SqlEdCdeQualBrnProviderBase.generated.cs" />
+    <Compile Include="SqlEdCdeQualCatProvider.cs" />
+    <Compile Include="SqlEdCdeQualCatProviderBase.generated.cs" />
+    <Compile Include="SqlEdCdeQualPhaseProvider.cs" />
+    <Compile Include="SqlEdCdeQualPhaseProviderBase.generated.cs" />
+    <Compile Include="SqlEdCdeTchngMthdProvider.cs" />
+    <Compile Include="SqlEdCdeTchngMthdProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeCourseAssessProvider.cs" />
+    <Compile Include="SqlEdCodeCourseAssessProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeCourseChngProvider.cs" />
+    <Compile Include="SqlEdCodeCourseChngProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeCourseProvider.cs" />
+    <Compile Include="SqlEdCodeCourseProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeCourseStatusProvider.cs" />
+    <Compile Include="SqlEdCodeCourseStatusProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeCourseTeachingProvider.cs" />
+    <Compile Include="SqlEdCodeCourseTeachingProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeDischargeHProvider.cs" />
+    <Compile Include="SqlEdCodeDischargeHProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeDischargeReasonsProvider.cs" />
+    <Compile Include="SqlEdCodeDischargeReasonsProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeEnrollTypeProvider.cs" />
+    <Compile Include="SqlEdCodeEnrollTypeProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeExamPeriodTypeProvider.cs" />
+    <Compile Include="SqlEdCodeExamPeriodTypeProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeExcuseTypeProvider.cs" />
+    <Compile Include="SqlEdCodeExcuseTypeProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeGradingProvider.cs" />
+    <Compile Include="SqlEdCodeGradingProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeGradingTypeProvider.cs" />
+    <Compile Include="SqlEdCodeGradingTypeProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeLevelProvider.cs" />
+    <Compile Include="SqlEdCodeLevelProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeLoadTypeProvider.cs" />
+    <Compile Include="SqlEdCodeLoadTypeProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeQualProvider.cs" />
+    <Compile Include="SqlEdCodeQualProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeRatingProvider.cs" />
+    <Compile Include="SqlEdCodeRatingProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeRepeatRuleProvider.cs" />
+    <Compile Include="SqlEdCodeRepeatRuleProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeSemActvityProvider.cs" />
+    <Compile Include="SqlEdCodeSemActvityProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeSemesterProvider.cs" />
+    <Compile Include="SqlEdCodeSemesterProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeSemesterTypeProvider.cs" />
+    <Compile Include="SqlEdCodeSemesterTypeProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeStateStatusProvider.cs" />
+    <Compile Include="SqlEdCodeStateStatusProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeStudyMethodProvider.cs" />
+    <Compile Include="SqlEdCodeStudyMethodProviderBase.generated.cs" />
+    <Compile Include="SqlEdCodeTransCourseTypeProvider.cs" />
+    <Compile Include="SqlEdCodeTransCourseTypeProviderBase.generated.cs" />
+    <Compile Include="SqlEdCourseBarredProvider.cs" />
+    <Compile Include="SqlEdCourseBarredProviderBase.generated.cs" />
+    <Compile Include="SqlEdCourseCoreqProvider.cs" />
+    <Compile Include="SqlEdCourseCoreqProviderBase.generated.cs" />
+    <Compile Include="SqlEdCourseEquivProvider.cs" />
+    <Compile Include="SqlEdCourseEquivProviderBase.generated.cs" />
+    <Compile Include="SqlEdCourseExpDtlProvider.cs" />
+    <Compile Include="SqlEdCourseExpDtlProviderBase.generated.cs" />
+    <Compile Include="SqlEdCourseExpHdrProvider.cs" />
+    <Compile Include="SqlEdCourseExpHdrProviderBase.generated.cs" />
+    <Compile Include="SqlEdCourseInstanceProvider.cs" />
+    <Compile Include="SqlEdCourseInstanceProviderBase.generated.cs" />
+    <Compile Include="SqlEdCourseOrientProvider.cs" />
+    <Compile Include="SqlEdCourseOrientProviderBase.generated.cs" />
+    <Compile Include="SqlEdCoursePrfxProvider.cs" />
+    <Compile Include="SqlEdCoursePrfxProviderBase.generated.cs" />
+    <Compile Include="SqlEdCourseProjectProvider.cs" />
+    <Compile Include="SqlEdCourseProjectProviderBase.generated.cs" />
+    <Compile Include="SqlEdCourseProvider.cs" />
+    <Compile Include="SqlEdCourseProviderBase.generated.cs" />
+    <Compile Include="SqlEdCourseTchngProvider.cs" />
+    <Compile Include="SqlEdCourseTchngProviderBase.generated.cs" />
+    <Compile Include="SqlEdCourseThesisProvider.cs" />
+    <Compile Include="SqlEdCourseThesisProviderBase.generated.cs" />
+    <Compile Include="SqlEdCourseTrainProvider.cs" />
+    <Compile Include="SqlEdCourseTrainProviderBase.generated.cs" />
+    <Compile Include="SqlEdExamSchdlProvider.cs" />
+    <Compile Include="SqlEdExamSchdlProviderBase.generated.cs" />
+    <Compile Include="SqlEdExamStudAbsenceProvider.cs" />
+    <Compile Include="SqlEdExamStudAbsenceProviderBase.generated.cs" />
+    <Compile Include="SqlEdInttransRuleProvider.cs" />
+    <Compile Include="SqlEdInttransRuleProviderBase.generated.cs" />
+    <Compile Include="SqlEdOfferingCourseProvider.cs" />
+    <Compile Include="SqlEdOfferingCourseProviderBase.generated.cs" />
+    <Compile Include="SqlEdOfferingProvider.cs" />
+    <Compile Include="SqlEdOfferingProviderBase.generated.cs" />
+    <Compile Include="SqlEdProjectProvider.cs" />
+    <Compile Include="SqlEdProjectProviderBase.generated.cs" />
+    <Compile Include="SqlEdProjStudProvider.cs" />
+    <Compile Include="SqlEdProjStudProviderBase.generated.cs" />
+    <Compile Include="SqlEdProjSupervisorProvider.cs" />
+    <Compile Include="SqlEdProjSupervisorProviderBase.generated.cs" />
+    <Compile Include="SqlEdResidencyStudProvider.cs" />
+    <Compile Include="SqlEdResidencyStudProviderBase.generated.cs" />
+    <Compile Include="SqlEdSemAgendaDtlProvider.cs" />
+    <Compile Include="SqlEdSemAgendaDtlProviderBase.generated.cs" />
+    <Compile Include="SqlEdSemAgendaTimeProvider.cs" />
+    <Compile Include="SqlEdSemAgendaTimeProviderBase.generated.cs" />
+    <Compile Include="SqlEdSemesterAgendaProvider.cs" />
+    <Compile Include="SqlEdSemesterAgendaProviderBase.generated.cs" />
+    <Compile Include="SqlEdSemesterOpenProvider.cs" />
+    <Compile Include="SqlEdSemesterOpenProviderBase.generated.cs" />
+    <Compile Include="SqlEdStaffCoursePrefProvider.cs" />
+    <Compile Include="SqlEdStaffCoursePrefProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudAbsenceProvider.cs" />
+    <Compile Include="SqlEdStudAbsenceProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudAbsFwProvider.cs" />
+    <Compile Include="SqlEdStudAbsFwProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudAcadmicAdvProvider.cs" />
+    <Compile Include="SqlEdStudAcadmicAdvProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudAcadWarnProvider.cs" />
+    <Compile Include="SqlEdStudAcadWarnProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudBranchPrefProvider.cs" />
+    <Compile Include="SqlEdStudBranchPrefProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudBranchTempProvider.cs" />
+    <Compile Include="SqlEdStudBranchTempProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudBranchTryProvider.cs" />
+    <Compile Include="SqlEdStudBranchTryProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudClrncItemProvider.cs" />
+    <Compile Include="SqlEdStudClrncItemProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudClrncReqProvider.cs" />
+    <Compile Include="SqlEdStudClrncReqProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudCodeChngProvider.cs" />
+    <Compile Include="SqlEdStudCodeChngProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudContactMethodProvider.cs" />
+    <Compile Include="SqlEdStudContactMethodProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudCourseChngProvider.cs" />
+    <Compile Include="SqlEdStudCourseChngProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudCourseCompProvider.cs" />
+    <Compile Include="SqlEdStudCourseCompProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudCourseGrdChngProvider.cs" />
+    <Compile Include="SqlEdStudCourseGrdChngProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudCourseRegAssessProvider.cs" />
+    <Compile Include="SqlEdStudCourseRegAssessProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudCourseRegPreProvider.cs" />
+    <Compile Include="SqlEdStudCourseRegPreProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudCourseRegProvider.cs" />
+    <Compile Include="SqlEdStudCourseRegProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudCourseRegTempProvider.cs" />
+    <Compile Include="SqlEdStudCourseRegTempProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudCourseWaitProvider.cs" />
+    <Compile Include="SqlEdStudCourseWaitProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudDisabilityProvider.cs" />
+    <Compile Include="SqlEdStudDisabilityProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudDocumentProvider.cs" />
+    <Compile Include="SqlEdStudDocumentProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudEnrollChangeProvider.cs" />
+    <Compile Include="SqlEdStudEnrollChangeProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudExcuseCourseProvider.cs" />
+    <Compile Include="SqlEdStudExcuseCourseProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudExcuseProvider.cs" />
+    <Compile Include="SqlEdStudExcuseProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudFacultyProvider.cs" />
+    <Compile Include="SqlEdStudFacultyProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudGrantDegreeProvider.cs" />
+    <Compile Include="SqlEdStudGrantDegreeProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudGrantTempProvider.cs" />
+    <Compile Include="SqlEdStudGrantTempProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudGroupProvider.cs" />
+    <Compile Include="SqlEdStudGroupProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudGuardProvider.cs" />
+    <Compile Include="SqlEdStudGuardProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudIntTransPrefProvider.cs" />
+    <Compile Include="SqlEdStudIntTransPrefProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudInttransTempProvider.cs" />
+    <Compile Include="SqlEdStudInttransTempProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudIntTrnsCourseFromProvider.cs" />
+    <Compile Include="SqlEdStudIntTrnsCourseFromProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudIntTrnsCourseToProvider.cs" />
+    <Compile Include="SqlEdStudIntTrnsCourseToProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudIntTrnsProvider.cs" />
+    <Compile Include="SqlEdStudIntTrnsProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudIntTrnsStateFromProvider.cs" />
+    <Compile Include="SqlEdStudIntTrnsStateFromProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudIntTrnsStateToProvider.cs" />
+    <Compile Include="SqlEdStudIntTrnsStateToProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudLangProvider.cs" />
+    <Compile Include="SqlEdStudLangProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudMilitaryInfoProvider.cs" />
+    <Compile Include="SqlEdStudMilitaryInfoProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudMilitaryStateProvider.cs" />
+    <Compile Include="SqlEdStudMilitaryStateProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudNoteProvider.cs" />
+    <Compile Include="SqlEdStudNoteProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudPnltyCourseProvider.cs" />
+    <Compile Include="SqlEdStudPnltyCourseProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudProblemProvider.cs" />
+    <Compile Include="SqlEdStudProblemProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudProvider.cs" />
+    <Compile Include="SqlEdStudProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudQualProvider.cs" />
+    <Compile Include="SqlEdStudQualProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudRsrvRegTimeProvider.cs" />
+    <Compile Include="SqlEdStudRsrvRegTimeProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudSemesterProvider.cs" />
+    <Compile Include="SqlEdStudSemesterProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudStateProvider.cs" />
+    <Compile Include="SqlEdStudStateProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudStateTempProvider.cs" />
+    <Compile Include="SqlEdStudStateTempProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudTransFromReqProvider.cs" />
+    <Compile Include="SqlEdStudTransFromReqProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudTransProvider.cs" />
+    <Compile Include="SqlEdStudTransProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudViolAppealProvider.cs" />
+    <Compile Include="SqlEdStudViolAppealProviderBase.generated.cs" />
+    <Compile Include="SqlEdStudViolProvider.cs" />
+    <Compile Include="SqlEdStudViolProviderBase.generated.cs" />
+    <Compile Include="SqlEdTrainingProvider.cs" />
+    <Compile Include="SqlEdTrainingProviderBase.generated.cs" />
+    <Compile Include="SqlEdTrainStudProvider.cs" />
+    <Compile Include="SqlEdTrainStudProviderBase.generated.cs" />
+    <Compile Include="SqlEdTrainSupervisorProvider.cs" />
+    <Compile Include="SqlEdTrainSupervisorProviderBase.generated.cs" />
+    <Compile Include="SqlEntAvailPrntTypeProvider.cs" />
+    <Compile Include="SqlEntAvailPrntTypeProviderBase.generated.cs" />
+    <Compile Include="SqlEntCdePkgTypeProvider.cs" />
+    <Compile Include="SqlEntCdePkgTypeProviderBase.generated.cs" />
+    <Compile Include="SqlEntCodeEntityTypeProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlEntCodeEntityTypeProviderBase.generated.cs">
+      <DependentUpon>SqlEntCodeEntityTypeProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlEntCodeFullfillMetadataProvider.cs" />
+    <Compile Include="SqlEntCodeFullfillMetadataProviderBase.generated.cs" />
+    <Compile Include="SqlEntCodeGradingMetadataProvider.cs" />
+    <Compile Include="SqlEntCodeGradingMetadataProviderBase.generated.cs" />
+    <Compile Include="SqlEntCodeIntroMetadataProvider.cs" />
+    <Compile Include="SqlEntCodeIntroMetadataProviderBase.generated.cs" />
+    <Compile Include="SqlEntCodeMdTypeProvider.cs" />
+    <Compile Include="SqlEntCodeMdTypeProviderBase.generated.cs" />
+    <Compile Include="SqlEntCodePolicyCatProvider.cs" />
+    <Compile Include="SqlEntCodePolicyCatProviderBase.generated.cs" />
+    <Compile Include="SqlEntCodePolicyMetadataProvider.cs" />
+    <Compile Include="SqlEntCodePolicyMetadataProviderBase.generated.cs" />
+    <Compile Include="SqlEntCodePrecondMetadataProvider.cs" />
+    <Compile Include="SqlEntCodePrecondMetadataProviderBase.generated.cs" />
+    <Compile Include="SqlEntCourseMdDataProvider.cs" />
+    <Compile Include="SqlEntCourseMdDataProviderBase.generated.cs" />
+    <Compile Include="SqlEntCoursePkgDtlProvider.cs" />
+    <Compile Include="SqlEntCoursePkgDtlProviderBase.generated.cs" />
+    <Compile Include="SqlEntCoursePkgHdrProvider.cs" />
+    <Compile Include="SqlEntCoursePkgHdrProviderBase.generated.cs" />
+    <Compile Include="SqlEntFullfillMdDataProvider.cs" />
+    <Compile Include="SqlEntFullfillMdDataProviderBase.generated.cs" />
+    <Compile Include="SqlEntFullfillMetadataProvider.cs" />
+    <Compile Include="SqlEntFullfillMetadataProviderBase.generated.cs" />
+    <Compile Include="SqlEntGradingMdDataProvider.cs" />
+    <Compile Include="SqlEntGradingMdDataProviderBase.generated.cs" />
+    <Compile Include="SqlEntGradingMetadataProvider.cs" />
+    <Compile Include="SqlEntGradingMetadataProviderBase.generated.cs" />
+    <Compile Include="SqlEntGraduationReqProvider.cs" />
+    <Compile Include="SqlEntGraduationReqProviderBase.generated.cs" />
+    <Compile Include="SqlEntIntroducMdDataProvider.cs" />
+    <Compile Include="SqlEntIntroducMdDataProviderBase.generated.cs" />
+    <Compile Include="SqlEntIntroducMetadataProvider.cs" />
+    <Compile Include="SqlEntIntroducMetadataProviderBase.generated.cs" />
+    <Compile Include="SqlEntityMainProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlEntityMainProviderBase.generated.cs">
+      <DependentUpon>SqlEntityMainProvider.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="..\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlEntMainMatrixProvider.cs" />
+    <Compile Include="SqlEntMainMatrixProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolicyAbsenceProvider.cs" />
+    <Compile Include="SqlEntPolicyAbsenceProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolicyAccumHonorProvider.cs" />
+    <Compile Include="SqlEntPolicyAccumHonorProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolicyAssessCourseProvider.cs" />
+    <Compile Include="SqlEntPolicyAssessCourseProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolicyAssessDtlProvider.cs" />
+    <Compile Include="SqlEntPolicyAssessDtlProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolicyAssessHdrProvider.cs" />
+    <Compile Include="SqlEntPolicyAssessHdrProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolicyCourseChngProvider.cs" />
+    <Compile Include="SqlEntPolicyCourseChngProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolicyCourseRepeatProvider.cs" />
+    <Compile Include="SqlEntPolicyCourseRepeatProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolicyExcuseProvider.cs" />
+    <Compile Include="SqlEntPolicyExcuseProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolicyGradingCourseProvider.cs" />
+    <Compile Include="SqlEntPolicyGradingCourseProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolicyGradingDtlProvider.cs" />
+    <Compile Include="SqlEntPolicyGradingDtlProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolicyGradingHdrProvider.cs" />
+    <Compile Include="SqlEntPolicyGradingHdrProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolicyLoadProvider.cs" />
+    <Compile Include="SqlEntPolicyLoadProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolicyMdDataProvider.cs" />
+    <Compile Include="SqlEntPolicyMdDataProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolicyMetadataProvider.cs" />
+    <Compile Include="SqlEntPolicyMetadataProviderBase.generated.cs" />
+    <Compile Include="SqlEntPolicyObservedProvider.cs" />
+    <Compile Include="SqlEntPolicyObservedProviderBase.generated.cs" />
+    <Compile Include="SqlEntPrecondMdDataProvider.cs" />
+    <Compile Include="SqlEntPrecondMdDataProviderBase.generated.cs" />
+    <Compile Include="SqlEntPrecondMetadataProvider.cs" />
+    <Compile Include="SqlEntPrecondMetadataProviderBase.generated.cs" />
+    <Compile Include="SqlErpOrgTreeProvider.cs" />
+    <Compile Include="SqlErpOrgTreeProviderBase.generated.cs" />
+    <Compile Include="SqlFeeCdeDiscTypeProvider.cs" />
+    <Compile Include="SqlFeeCdeDiscTypeProviderBase.generated.cs" />
+    <Compile Include="SqlFeeCodeBanksProvider.cs" />
+    <Compile Include="SqlFeeCodeBanksProviderBase.generated.cs" />
+    <Compile Include="SqlFeeCodeItemProvider.cs" />
+    <Compile Include="SqlFeeCodeItemProviderBase.generated.cs" />
+    <Compile Include="SqlFeeCodeTypeProvider.cs" />
+    <Compile Include="SqlFeeCodeTypeProviderBase.generated.cs" />
+    <Compile Include="SqlFeeCourseExpProvider.cs" />
+    <Compile Include="SqlFeeCourseExpProviderBase.generated.cs" />
+    <Compile Include="SqlFeeFacItemAdmYearProvider.cs" />
+    <Compile Include="SqlFeeFacItemAdmYearProviderBase.generated.cs" />
+    <Compile Include="SqlFeeFacultyInstallmentProvider.cs" />
+    <Compile Include="SqlFeeFacultyInstallmentProviderBase.generated.cs" />
+    <Compile Include="SqlFeeFacultyItemProvider.cs" />
+    <Compile Include="SqlFeeFacultyItemProviderBase.generated.cs" />
+    <Compile Include="SqlFeeFacultyRuleProvider.cs" />
+    <Compile Include="SqlFeeFacultyRuleProviderBase.generated.cs" />
+    <Compile Include="SqlFeeRefundCodeProvider.cs" />
+    <Compile Include="SqlFeeRefundCodeProviderBase.generated.cs" />
+    <Compile Include="SqlFeeSemesterAgendaProvider.cs" />
+    <Compile Include="SqlFeeSemesterAgendaProviderBase.generated.cs" />
+    <Compile Include="SqlFeeStudDiscProvider.cs" />
+    <Compile Include="SqlFeeStudDiscProviderBase.generated.cs" />
+    <Compile Include="SqlFeeStudFeeItemProvider.cs" />
+    <Compile Include="SqlFeeStudFeeItemProviderBase.generated.cs" />
+    <Compile Include="SqlFeeStudVoucherItemProvider.cs" />
+    <Compile Include="SqlFeeStudVoucherItemProviderBase.generated.cs" />
+    <Compile Include="SqlFeeStudVoucherProvider.cs" />
+    <Compile Include="SqlFeeStudVoucherProviderBase.generated.cs" />
+    <Compile Include="SqlGsAddressDtlProvider.cs" />
+    <Compile Include="SqlGsAddressDtlProviderBase.generated.cs" />
+    <Compile Include="SqlGsApprovalDProvider.cs" />
+    <Compile Include="SqlGsApprovalDProviderBase.generated.cs" />
+    <Compile Include="SqlGsApprovalHProvider.cs" />
+    <Compile Include="SqlGsApprovalHProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeCampusProvider.cs" />
+    <Compile Include="SqlGsCdeCampusProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeClrncItemFacProvider.cs" />
+    <Compile Include="SqlGsCdeClrncItemFacProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeClrncItemProvider.cs" />
+    <Compile Include="SqlGsCdeClrncItemProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeClrncReasonProvider.cs" />
+    <Compile Include="SqlGsCdeClrncReasonProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeMaritalStatusProvider.cs" />
+    <Compile Include="SqlGsCdeMaritalStatusProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdePenaltyProvider.cs" />
+    <Compile Include="SqlGsCdePenaltyProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeSchoolProvider.cs" />
+    <Compile Include="SqlGsCdeSchoolProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeTrainRespProvider.cs" />
+    <Compile Include="SqlGsCdeTrainRespProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeTrainSiteProvider.cs" />
+    <Compile Include="SqlGsCdeTrainSiteProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeTrnSiteActProvider.cs" />
+    <Compile Include="SqlGsCdeTrnSiteActProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeTrnSiteTypeProvider.cs" />
+    <Compile Include="SqlGsCdeTrnSiteTypeProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeViolCatProvider.cs" />
+    <Compile Include="SqlGsCdeViolCatProviderBase.generated.cs" />
+    <Compile Include="SqlGsCdeViolProvider.cs" />
+    <Compile Include="SqlGsCdeViolProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeApprovalFacultyProvider.cs" />
+    <Compile Include="SqlGsCodeApprovalFacultyProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeApprovalFuncProvider.cs" />
+    <Compile Include="SqlGsCodeApprovalFuncProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeApprovalListDProvider.cs" />
+    <Compile Include="SqlGsCodeApprovalListDProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeApprovalListHProvider.cs" />
+    <Compile Include="SqlGsCodeApprovalListHProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeApprovalProvider.cs" />
+    <Compile Include="SqlGsCodeApprovalProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeCNodeNatureProvider.cs" />
+    <Compile Include="SqlGsCodeCNodeNatureProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeContactMethodProvider.cs" />
+    <Compile Include="SqlGsCodeContactMethodProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeCurrencyProvider.cs" />
+    <Compile Include="SqlGsCodeCurrencyProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeGenderProvider.cs" />
+    <Compile Include="SqlGsCodeGenderProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeIdentKindProvider.cs" />
+    <Compile Include="SqlGsCodeIdentKindProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeIdentTypeProvider.cs" />
+    <Compile Include="SqlGsCodeIdentTypeProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeKinshipProvider.cs" />
+    <Compile Include="SqlGsCodeKinshipProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeLanguageProvider.cs" />
+    <Compile Include="SqlGsCodeLanguageProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeMilCourseResProvider.cs" />
+    <Compile Include="SqlGsCodeMilCourseResProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeMilitaryStateProvider.cs" />
+    <Compile Include="SqlGsCodeMilitaryStateProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodePassFailProvider.cs" />
+    <Compile Include="SqlGsCodePassFailProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodePayMethodProvider.cs" />
+    <Compile Include="SqlGsCodePayMethodProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeReligionProvider.cs" />
+    <Compile Include="SqlGsCodeReligionProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeReqStatusProvider.cs" />
+    <Compile Include="SqlGsCodeReqStatusProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeRptSignatureProvider.cs" />
+    <Compile Include="SqlGsCodeRptSignatureProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeSysProvider.cs" />
+    <Compile Include="SqlGsCodeSysProviderBase.generated.cs" />
+    <Compile Include="SqlGsCodeWeekDayProvider.cs" />
+    <Compile Include="SqlGsCodeWeekDayProviderBase.generated.cs" />
+    <Compile Include="SqlGsContactMethodDProvider.cs" />
+    <Compile Include="SqlGsContactMethodDProviderBase.generated.cs" />
+    <Compile Include="SqlGsContactMethodHProvider.cs" />
+    <Compile Include="SqlGsContactMethodHProviderBase.generated.cs" />
+    <Compile Include="SqlGsCountryNodeProvider.cs" />
+    <Compile Include="SqlGsCountryNodeProviderBase.generated.cs" />
+    <Compile Include="SqlGsCourseElectTypeProvider.cs" />
+    <Compile Include="SqlGsCourseElectTypeProviderBase.generated.cs" />
+    <Compile Include="SqlGsMilitaryOfficeProvider.cs" />
+    <Compile Include="SqlGsMilitaryOfficeProviderBase.generated.cs" />
+    <Compile Include="SqlGsMilitaryRegionProvider.cs" />
+    <Compile Include="SqlGsMilitaryRegionProviderBase.generated.cs" />
+    <Compile Include="SqlGsSysPivotProvider.cs" />
+    <Compile Include="SqlGsSysPivotProviderBase.generated.cs" />
+    <Compile Include="SqlNetTiersProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <!--<Compile Include="SqlDataRepository.cs">
+			  <SubType>Code</SubType>
+			</Compile>-->
+    <Compile Include="SqlPgCodeRsrchStrategyProvider.cs" />
+    <Compile Include="SqlPgCodeRsrchStrategyProviderBase.generated.cs" />
+    <Compile Include="SqlPgSubjectDefinitionProvider.cs" />
+    <Compile Include="SqlPgSubjectDefinitionProviderBase.generated.cs" />
+    <Compile Include="SqlPgThesisDetailedSpecProvider.cs" />
+    <Compile Include="SqlPgThesisDetailedSpecProviderBase.generated.cs" />
+    <Compile Include="SqlPgThesisGeneralSpecProvider.cs" />
+    <Compile Include="SqlPgThesisGeneralSpecProviderBase.generated.cs" />
+    <Compile Include="SqlPgThesisStudProvider.cs" />
+    <Compile Include="SqlPgThesisStudProviderBase.generated.cs" />
+    <Compile Include="SqlSaCandReleaseDetailProvider.cs" />
+    <Compile Include="SqlSaCandReleaseDetailProviderBase.generated.cs" />
+    <Compile Include="SqlSaCandReleaseProvider.cs" />
+    <Compile Include="SqlSaCandReleaseProviderBase.generated.cs" />
+    <Compile Include="SqlSaCdeAcadLoadProvider.cs" />
+    <Compile Include="SqlSaCdeAcadLoadProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeCommMemberTypeProvider.cs" />
+    <Compile Include="SqlSaCodeCommMemberTypeProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeCourseProvider.cs" />
+    <Compile Include="SqlSaCodeCourseProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeCourseScoreProvider.cs" />
+    <Compile Include="SqlSaCodeCourseScoreProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeCourseTypeProvider.cs" />
+    <Compile Include="SqlSaCodeCourseTypeProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeDocProvider.cs" />
+    <Compile Include="SqlSaCodeDocProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeEmpMethodProvider.cs" />
+    <Compile Include="SqlSaCodeEmpMethodProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeExperienceProvider.cs" />
+    <Compile Include="SqlSaCodeExperienceProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeHealthStateProvider.cs" />
+    <Compile Include="SqlSaCodeHealthStateProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeJobActivityPlaceProvider.cs" />
+    <Compile Include="SqlSaCodeJobActivityPlaceProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeJobActivityProvider.cs" />
+    <Compile Include="SqlSaCodeJobActivityProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeJobBeforeStatusProvider.cs" />
+    <Compile Include="SqlSaCodeJobBeforeStatusProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeJobStatusProvider.cs" />
+    <Compile Include="SqlSaCodeJobStatusProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeOrgProvider.cs" />
+    <Compile Include="SqlSaCodeOrgProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeParDelNatureProvider.cs" />
+    <Compile Include="SqlSaCodeParDelNatureProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodePunishingAuthorityProvider.cs" />
+    <Compile Include="SqlSaCodePunishingAuthorityProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodePunishProvider.cs" />
+    <Compile Include="SqlSaCodePunishProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodePunishRsnProvider.cs" />
+    <Compile Include="SqlSaCodePunishRsnProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeRatingProvider.cs" />
+    <Compile Include="SqlSaCodeRatingProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeResearchCoopProvider.cs" />
+    <Compile Include="SqlSaCodeResearchCoopProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeScDegProvider.cs" />
+    <Compile Include="SqlSaCodeScDegProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeServTerminRsnProvider.cs" />
+    <Compile Include="SqlSaCodeServTerminRsnProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeStaffTypeProvider.cs" />
+    <Compile Include="SqlSaCodeStaffTypeProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeStfFlgProvider.cs" />
+    <Compile Include="SqlSaCodeStfFlgProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeSummeryProvider.cs" />
+    <Compile Include="SqlSaCodeSummeryProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeSuperviseJobProvider.cs" />
+    <Compile Include="SqlSaCodeSuperviseJobProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeTrainingFlgProvider.cs" />
+    <Compile Include="SqlSaCodeTrainingFlgProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeTrainingOrgProvider.cs" />
+    <Compile Include="SqlSaCodeTrainingOrgProviderBase.generated.cs" />
+    <Compile Include="SqlSaCodeVacationTypeProvider.cs" />
+    <Compile Include="SqlSaCodeVacationTypeProviderBase.generated.cs" />
+    <Compile Include="SqlSaCommMemberProvider.cs" />
+    <Compile Include="SqlSaCommMemberProviderBase.generated.cs" />
+    <Compile Include="SqlSaDocOfFileProvider.cs" />
+    <Compile Include="SqlSaDocOfFileProviderBase.generated.cs" />
+    <Compile Include="SqlSaEmpHierarchyProvider.cs" />
+    <Compile Include="SqlSaEmpHierarchyProviderBase.generated.cs" />
+    <Compile Include="SqlSaEmploymentProvider.cs" />
+    <Compile Include="SqlSaEmploymentProviderBase.generated.cs" />
+    <Compile Include="SqlSaExperienceProvider.cs" />
+    <Compile Include="SqlSaExperienceProviderBase.generated.cs" />
+    <Compile Include="SqlSaExtDelProvider.cs" />
+    <Compile Include="SqlSaExtDelProviderBase.generated.cs" />
+    <Compile Include="SqlSaFinStatmentProvider.cs" />
+    <Compile Include="SqlSaFinStatmentProviderBase.generated.cs" />
+    <Compile Include="SqlSaJobActivityProvider.cs" />
+    <Compile Include="SqlSaJobActivityProviderBase.generated.cs" />
+    <Compile Include="SqlSaJobStartStatmentProvider.cs" />
+    <Compile Include="SqlSaJobStartStatmentProviderBase.generated.cs" />
+    <Compile Include="SqlSaJobStoppageProvider.cs" />
+    <Compile Include="SqlSaJobStoppageProviderBase.generated.cs" />
+    <Compile Include="SqlSaKeywordListProvider.cs" />
+    <Compile Include="SqlSaKeywordListProviderBase.generated.cs" />
+    <Compile Include="SqlSaMilitaryStatusProvider.cs" />
+    <Compile Include="SqlSaMilitaryStatusProviderBase.generated.cs" />
+    <Compile Include="SqlSaMiltaryProvider.cs" />
+    <Compile Include="SqlSaMiltaryProviderBase.generated.cs" />
+    <Compile Include="SqlSaOfficeHourProvider.cs" />
+    <Compile Include="SqlSaOfficeHourProviderBase.generated.cs" />
+    <Compile Include="SqlSaPersonIdProvider.cs" />
+    <Compile Include="SqlSaPersonIdProviderBase.generated.cs" />
+    <Compile Include="SqlSaPromotionCondProvider.cs" />
+    <Compile Include="SqlSaPromotionCondProviderBase.generated.cs" />
+    <Compile Include="SqlSaPromotionCondStsfProvider.cs" />
+    <Compile Include="SqlSaPromotionCondStsfProviderBase.generated.cs" />
+    <Compile Include="SqlSaPromotionProvider.cs" />
+    <Compile Include="SqlSaPromotionProviderBase.generated.cs" />
+    <Compile Include="SqlSaPromotionRequestProvider.cs" />
+    <Compile Include="SqlSaPromotionRequestProviderBase.generated.cs" />
+    <Compile Include="SqlSaPublicationProvider.cs" />
+    <Compile Include="SqlSaPublicationProviderBase.generated.cs" />
+    <Compile Include="SqlSaPunishBylawAuthProvider.cs" />
+    <Compile Include="SqlSaPunishBylawAuthProviderBase.generated.cs" />
+    <Compile Include="SqlSaPunishmentBylawsProvider.cs" />
+    <Compile Include="SqlSaPunishmentBylawsProviderBase.generated.cs" />
+    <Compile Include="SqlSaPunishmentProvider.cs" />
+    <Compile Include="SqlSaPunishmentProviderBase.generated.cs" />
+    <Compile Include="SqlSaRaiseProvider.cs" />
+    <Compile Include="SqlSaRaiseProviderBase.generated.cs" />
+    <Compile Include="SqlSaRelativeProvider.cs" />
+    <Compile Include="SqlSaRelativeProviderBase.generated.cs" />
+    <Compile Include="SqlSaResearchTeamProvider.cs" />
+    <Compile Include="SqlSaResearchTeamProviderBase.generated.cs" />
+    <Compile Include="SqlSaScCommDecisionProvider.cs" />
+    <Compile Include="SqlSaScCommDecisionProviderBase.generated.cs" />
+    <Compile Include="SqlSaScCommProvider.cs" />
+    <Compile Include="SqlSaScCommProviderBase.generated.cs" />
+    <Compile Include="SqlSaScQualProvider.cs" />
+    <Compile Include="SqlSaScQualProviderBase.generated.cs" />
+    <Compile Include="SqlSaScResearchProvider.cs" />
+    <Compile Include="SqlSaScResearchProviderBase.generated.cs" />
+    <Compile Include="SqlSaServTerminProvider.cs" />
+    <Compile Include="SqlSaServTerminProviderBase.generated.cs" />
+    <Compile Include="SqlSaStfAttendProvider.cs" />
+    <Compile Include="SqlSaStfAttendProviderBase.generated.cs" />
+    <Compile Include="SqlSaStfMemberProvider.cs" />
+    <Compile Include="SqlSaStfMemberProviderBase.generated.cs" />
+    <Compile Include="SqlSaStfSummeryTransProvider.cs" />
+    <Compile Include="SqlSaStfSummeryTransProviderBase.generated.cs" />
+    <Compile Include="SqlSaSupervisingJobsProvider.cs" />
+    <Compile Include="SqlSaSupervisingJobsProviderBase.generated.cs" />
+    <Compile Include="SqlSaTrainingCourseProvider.cs" />
+    <Compile Include="SqlSaTrainingCourseProviderBase.generated.cs" />
+    <Compile Include="SqlSaTransferProvider.cs" />
+    <Compile Include="SqlSaTransferProviderBase.generated.cs" />
+    <Compile Include="SqlSaVacationBalanceHProvider.cs" />
+    <Compile Include="SqlSaVacationBalanceHProviderBase.generated.cs" />
+    <Compile Include="SqlSaVacationBalanceProvider.cs" />
+    <Compile Include="SqlSaVacationBalanceProviderBase.generated.cs" />
+    <Compile Include="SqlSaVacationBylawsProvider.cs" />
+    <Compile Include="SqlSaVacationBylawsProviderBase.generated.cs" />
+    <Compile Include="SqlSaVacationProvider.cs" />
+    <Compile Include="SqlSaVacationProviderBase.generated.cs" />
+    <Compile Include="SqlSaVacationRenewProvider.cs" />
+    <Compile Include="SqlSaVacationRenewProviderBase.generated.cs" />
+    <Compile Include="SqlSaVacationRuleProvider.cs" />
+    <Compile Include="SqlSaVacationRuleProviderBase.generated.cs" />
+    <Compile Include="SqlSaWarningAddTypeProvider.cs" />
+    <Compile Include="SqlSaWarningAddTypeProviderBase.generated.cs" />
+    <Compile Include="SqlSaWarningProvider.cs" />
+    <Compile Include="SqlSaWarningProviderBase.generated.cs" />
+    <Compile Include="SqlScBuildingProvider.cs" />
+    <Compile Include="SqlScBuildingProviderBase.generated.cs" />
+    <Compile Include="SqlScCdeHallEquipProvider.cs" />
+    <Compile Include="SqlScCdeHallEquipProviderBase.generated.cs" />
+    <Compile Include="SqlScCdeHallTypeProvider.cs" />
+    <Compile Include="SqlScCdeHallTypeProviderBase.generated.cs" />
+    <Compile Include="SqlScCdeSiteProvider.cs" />
+    <Compile Include="SqlScCdeSiteProviderBase.generated.cs" />
+    <Compile Include="SqlScDaySlotProvider.cs" />
+    <Compile Include="SqlScDaySlotProviderBase.generated.cs" />
+    <Compile Include="SqlScHallEquipProvider.cs" />
+    <Compile Include="SqlScHallEquipProviderBase.generated.cs" />
+    <Compile Include="SqlScHallProvider.cs" />
+    <Compile Include="SqlScHallProviderBase.generated.cs" />
+    <Compile Include="SqlScHallRsrvProvider.cs" />
+    <Compile Include="SqlScHallRsrvProviderBase.generated.cs" />
+    <Compile Include="SqlScHallRstrctonProvider.cs" />
+    <Compile Include="SqlScHallRstrctonProviderBase.generated.cs" />
+    <Compile Include="SqlScScheduleCrossListProvider.cs" />
+    <Compile Include="SqlScScheduleCrossListProviderBase.generated.cs" />
+    <Compile Include="SqlScScheduleDtlDayProvider.cs" />
+    <Compile Include="SqlScScheduleDtlDayProviderBase.generated.cs" />
+    <Compile Include="SqlScScheduleDtlExtStfProvider.cs" />
+    <Compile Include="SqlScScheduleDtlExtStfProviderBase.generated.cs" />
+    <Compile Include="SqlScScheduleDtlProvider.cs" />
+    <Compile Include="SqlScScheduleDtlProviderBase.generated.cs" />
+    <Compile Include="SqlScScheduleHdrDefaultProvider.cs" />
+    <Compile Include="SqlScScheduleHdrDefaultProviderBase.generated.cs" />
+    <Compile Include="SqlScScheduleHdrProvider.cs" />
+    <Compile Include="SqlScScheduleHdrProviderBase.generated.cs" />
+    <Compile Include="SqlScTchngAgendaProvider.cs" />
+    <Compile Include="SqlScTchngAgendaProviderBase.generated.cs" />
+    <Compile Include="SqlScTchngSlotAgendaProvider.cs" />
+    <Compile Include="SqlScTchngSlotAgendaProviderBase.generated.cs" />
+    <Compile Include="SqlScTchngSlotProvider.cs" />
+    <Compile Include="SqlScTchngSlotProviderBase.generated.cs" />
+    <Compile Include="SqlSeAccntProvider.cs" />
+    <Compile Include="SqlSeAccntProviderBase.generated.cs" />
+    <Compile Include="SqlSeApplicationLogProvider.cs" />
+    <Compile Include="SqlSeApplicationLogProviderBase.generated.cs" />
+    <Compile Include="SqlSeCodeChangeTypeProvider.cs" />
+    <Compile Include="SqlSeCodeChangeTypeProviderBase.generated.cs" />
+    <Compile Include="SqlSeCodeUserJobProvider.cs" />
+    <Compile Include="SqlSeCodeUserJobProviderBase.generated.cs" />
+    <Compile Include="SqlSeCodeUserPlaceProvider.cs" />
+    <Compile Include="SqlSeCodeUserPlaceProviderBase.generated.cs" />
+    <Compile Include="SqlSeCodeUserTypeProvider.cs" />
+    <Compile Include="SqlSeCodeUserTypeProviderBase.generated.cs" />
+    <Compile Include="SqlSeControlBizTypeProvider.cs" />
+    <Compile Include="SqlSeControlBizTypeProviderBase.generated.cs" />
+    <Compile Include="SqlSeControlDisableWayProvider.cs" />
+    <Compile Include="SqlSeControlDisableWayProviderBase.generated.cs" />
+    <Compile Include="SqlSeControlTechTypeProvider.cs" />
+    <Compile Include="SqlSeControlTechTypeProviderBase.generated.cs" />
+    <Compile Include="SqlSeFormControlProvider.cs" />
+    <Compile Include="SqlSeFormControlProviderBase.generated.cs" />
+    <Compile Include="SqlSeFormProvider.cs" />
+    <Compile Include="SqlSeFormProviderBase.generated.cs" />
+    <Compile Include="SqlSeModuleProvider.cs" />
+    <Compile Include="SqlSeModuleProviderBase.generated.cs" />
+    <Compile Include="SqlSeUserAccntFormDiffProvider.cs" />
+    <Compile Include="SqlSeUserAccntFormDiffProviderBase.generated.cs" />
+    <Compile Include="SqlSeUserAccntProvider.cs" />
+    <Compile Include="SqlSeUserAccntProviderBase.generated.cs" />
+    <Compile Include="SqlSeUserPhaseProvider.cs" />
+    <Compile Include="SqlSeUserPhaseProviderBase.generated.cs" />
+    <Compile Include="SqlSeUserProvider.cs" />
+    <Compile Include="SqlSeUserProviderBase.generated.cs" />
+    <Compile Include="SqlSeVersionProvider.cs" />
+    <Compile Include="SqlSeVersionProviderBase.generated.cs" />
+    <Compile Include="SqlStaticViNotesProvider.cs" />
+    <Compile Include="SqlStaticViNotesProviderBase.generated.cs" />
+    <Compile Include="SqlSvCdeCompDProvider.cs" />
+    <Compile Include="SqlSvCdeCompDProviderBase.generated.cs" />
+    <Compile Include="SqlSvCdeCompHProvider.cs" />
+    <Compile Include="SqlSvCdeCompHProviderBase.generated.cs" />
+    <Compile Include="SqlSvCdeCompTypeProvider.cs" />
+    <Compile Include="SqlSvCdeCompTypeProviderBase.generated.cs" />
+    <Compile Include="SqlSvCdeLockerProvider.cs" />
+    <Compile Include="SqlSvCdeLockerProviderBase.generated.cs" />
+    <Compile Include="SqlSvCdeReqStatusProvider.cs" />
+    <Compile Include="SqlSvCdeReqStatusProviderBase.generated.cs" />
+    <Compile Include="SqlSvCodeEvalItemProvider.cs" />
+    <Compile Include="SqlSvCodeEvalItemProviderBase.generated.cs" />
+    <Compile Include="SqlSvCodeRatingSchmDtlProvider.cs" />
+    <Compile Include="SqlSvCodeRatingSchmDtlProviderBase.generated.cs" />
+    <Compile Include="SqlSvCodeRatingSchmProvider.cs" />
+    <Compile Include="SqlSvCodeRatingSchmProviderBase.generated.cs" />
+    <Compile Include="SqlSvCourseEvalItemProvider.cs" />
+    <Compile Include="SqlSvCourseEvalItemProviderBase.generated.cs" />
+    <Compile Include="SqlSvCourseEvalProvider.cs" />
+    <Compile Include="SqlSvCourseEvalProviderBase.generated.cs" />
+    <Compile Include="SqlSvLecNoteProvider.cs" />
+    <Compile Include="SqlSvLecNoteProviderBase.generated.cs" />
+    <Compile Include="SqlSvMessageProvider.cs" />
+    <Compile Include="SqlSvMessageProviderBase.generated.cs" />
+    <Compile Include="SqlSvPollDtlProvider.cs" />
+    <Compile Include="SqlSvPollDtlProviderBase.generated.cs" />
+    <Compile Include="SqlSvPollHdrProvider.cs" />
+    <Compile Include="SqlSvPollHdrProviderBase.generated.cs" />
+    <Compile Include="SqlSvStaffEvalItemProvider.cs" />
+    <Compile Include="SqlSvStaffEvalItemProviderBase.generated.cs" />
+    <Compile Include="SqlSvStaffEvlProvider.cs" />
+    <Compile Include="SqlSvStaffEvlProviderBase.generated.cs" />
+    <Compile Include="SqlSvStudAskAdvProvider.cs" />
+    <Compile Include="SqlSvStudAskAdvProviderBase.generated.cs" />
+    <Compile Include="SqlSvStudAskAdvReProvider.cs" />
+    <Compile Include="SqlSvStudAskAdvReProviderBase.generated.cs" />
+    <Compile Include="SqlSvStudCompProvider.cs" />
+    <Compile Include="SqlSvStudCompProviderBase.generated.cs" />
+    <Compile Include="SqlSvStudCourseEvalProvider.cs" />
+    <Compile Include="SqlSvStudCourseEvalProviderBase.generated.cs" />
+    <Compile Include="SqlSvStudLockerReqProvider.cs" />
+    <Compile Include="SqlSvStudLockerReqProviderBase.generated.cs" />
+    <Compile Include="SqlSvStudPollProvider.cs" />
+    <Compile Include="SqlSvStudPollProviderBase.generated.cs" />
+    <Compile Include="SqlSvStudStaffEvalProvider.cs" />
+    <Compile Include="SqlSvStudStaffEvalProviderBase.generated.cs" />
+    <Compile Include="SqlSvUserMessageProvider.cs" />
+    <Compile Include="SqlSvUserMessageProviderBase.generated.cs" />
+    <Compile Include="SqlSystemParamProvider.cs" />
+    <Compile Include="SqlSystemParamProviderBase.generated.cs" />
+    <Compile Include="SqlTrnsCdeBusProvider.cs" />
+    <Compile Include="SqlTrnsCdeBusProviderBase.generated.cs" />
+    <Compile Include="SqlTrnsCdeColorProvider.cs" />
+    <Compile Include="SqlTrnsCdeColorProviderBase.generated.cs" />
+    <Compile Include="SqlTrnsCdeDrvrProvider.cs" />
+    <Compile Include="SqlTrnsCdeDrvrProviderBase.generated.cs" />
+    <Compile Include="SqlTrnsCdeLineProvider.cs" />
+    <Compile Include="SqlTrnsCdeLineProviderBase.generated.cs" />
+    <Compile Include="SqlTrnsCdeStopProvider.cs" />
+    <Compile Include="SqlTrnsCdeStopProviderBase.generated.cs" />
+    <Compile Include="SqlTrnsLineProvider.cs" />
+    <Compile Include="SqlTrnsLineProviderBase.generated.cs" />
+    <Compile Include="SqlTrnsLineStopProvider.cs" />
+    <Compile Include="SqlTrnsLineStopProviderBase.generated.cs" />
+    <Compile Include="SqlTrnsStudCarStkrProvider.cs" />
+    <Compile Include="SqlTrnsStudCarStkrProviderBase.generated.cs" />
+    <Compile Include="SqlTrnsStudReqProvider.cs" />
+    <Compile Include="SqlTrnsStudReqProviderBase.generated.cs" />
+    <Compile Include="SqlUsrTopLinkProvider.cs" />
+    <Compile Include="SqlUsrTopLinkProviderBase.generated.cs" />
+    <Compile Include="StoredProcedureProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomProcedures.xml" />
+    <EmbeddedResource Include="Procedures.xml" />
+    <EmbeddedResource Include="ProceduresUpdated.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UMIS_VER2.BusinessLyer\UMIS_VER2.BusinessLyer.csproj">
+      <Project>{20e43088-4618-4f4a-b8ad-fc31b50d94cd}</Project>
+      <Name>UMIS_VER2.BusinessLyer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

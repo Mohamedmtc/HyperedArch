@@ -1,0 +1,108 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeSmith", "CodeSmith", "{EC0C74AD-C686-48FD-B21D-113F4CB0ED46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UMIS_VER2.BusinessLyer", "..\UMIS_V2.1\UMIS_VER2.BusinessLyer\UMIS_VER2.BusinessLyer.csproj", "{20E43088-4618-4F4A-B8AD-FC31B50D94CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UMIS_VER2.AccessLayer", "..\UMIS_V2.1\UMIS_VER2.AccessLayer\UMIS_VER2.AccessLayer.csproj", "{041C1BBE-0BFB-4D45-8125-9AB0BBC09A92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UMIS_VER2.AccessLayer.SqlClient", "..\UMIS_V2.1\UMIS_VER2.AccessLayer.SqlClient\UMIS_VER2.AccessLayer.SqlClient.csproj", "{8996A7B4-57D3-440B-A545-A701844B8C4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UMIS_VER2", "..\UMIS_V2.1\UMIS_VER2\UMIS_VER2.csproj", "{794327CE-DC0A-4381-89EE-4C00AFB08D5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helper", "Helper", "{8459F575-3C85-4222-A37E-17C4BAD19E6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebApi", "TestWebApi\TestWebApi.csproj", "{AB820B71-A5FB-4041-A3FB-95E652D68C07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Informatique.Base.NetFrameWork", "Informatique.Base.NetFrameWork\Informatique.Base.NetFrameWork.csproj", "{E80721D7-87DD-47D2-9AD9-F1471860AB97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		GenerateDebug|Any CPU = GenerateDebug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20E43088-4618-4F4A-B8AD-FC31B50D94CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20E43088-4618-4F4A-B8AD-FC31B50D94CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20E43088-4618-4F4A-B8AD-FC31B50D94CD}.GenerateDebug|Any CPU.ActiveCfg = GenerateDebug|Any CPU
+		{20E43088-4618-4F4A-B8AD-FC31B50D94CD}.GenerateDebug|Any CPU.Build.0 = GenerateDebug|Any CPU
+		{20E43088-4618-4F4A-B8AD-FC31B50D94CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20E43088-4618-4F4A-B8AD-FC31B50D94CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{041C1BBE-0BFB-4D45-8125-9AB0BBC09A92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{041C1BBE-0BFB-4D45-8125-9AB0BBC09A92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{041C1BBE-0BFB-4D45-8125-9AB0BBC09A92}.GenerateDebug|Any CPU.ActiveCfg = GenerateDebug|Any CPU
+		{041C1BBE-0BFB-4D45-8125-9AB0BBC09A92}.GenerateDebug|Any CPU.Build.0 = GenerateDebug|Any CPU
+		{041C1BBE-0BFB-4D45-8125-9AB0BBC09A92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{041C1BBE-0BFB-4D45-8125-9AB0BBC09A92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8996A7B4-57D3-440B-A545-A701844B8C4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8996A7B4-57D3-440B-A545-A701844B8C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8996A7B4-57D3-440B-A545-A701844B8C4A}.GenerateDebug|Any CPU.ActiveCfg = GenerateDebug|Any CPU
+		{8996A7B4-57D3-440B-A545-A701844B8C4A}.GenerateDebug|Any CPU.Build.0 = GenerateDebug|Any CPU
+		{8996A7B4-57D3-440B-A545-A701844B8C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8996A7B4-57D3-440B-A545-A701844B8C4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{794327CE-DC0A-4381-89EE-4C00AFB08D5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{794327CE-DC0A-4381-89EE-4C00AFB08D5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{794327CE-DC0A-4381-89EE-4C00AFB08D5A}.GenerateDebug|Any CPU.ActiveCfg = GenerateDebug|Any CPU
+		{794327CE-DC0A-4381-89EE-4C00AFB08D5A}.GenerateDebug|Any CPU.Build.0 = GenerateDebug|Any CPU
+		{794327CE-DC0A-4381-89EE-4C00AFB08D5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{794327CE-DC0A-4381-89EE-4C00AFB08D5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB820B71-A5FB-4041-A3FB-95E652D68C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB820B71-A5FB-4041-A3FB-95E652D68C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB820B71-A5FB-4041-A3FB-95E652D68C07}.GenerateDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB820B71-A5FB-4041-A3FB-95E652D68C07}.GenerateDebug|Any CPU.Build.0 = Debug|Any CPU
+		{AB820B71-A5FB-4041-A3FB-95E652D68C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB820B71-A5FB-4041-A3FB-95E652D68C07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E80721D7-87DD-47D2-9AD9-F1471860AB97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E80721D7-87DD-47D2-9AD9-F1471860AB97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E80721D7-87DD-47D2-9AD9-F1471860AB97}.GenerateDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E80721D7-87DD-47D2-9AD9-F1471860AB97}.GenerateDebug|Any CPU.Build.0 = Debug|Any CPU
+		{E80721D7-87DD-47D2-9AD9-F1471860AB97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E80721D7-87DD-47D2-9AD9-F1471860AB97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{20E43088-4618-4F4A-B8AD-FC31B50D94CD} = {EC0C74AD-C686-48FD-B21D-113F4CB0ED46}
+		{041C1BBE-0BFB-4D45-8125-9AB0BBC09A92} = {EC0C74AD-C686-48FD-B21D-113F4CB0ED46}
+		{8996A7B4-57D3-440B-A545-A701844B8C4A} = {EC0C74AD-C686-48FD-B21D-113F4CB0ED46}
+		{794327CE-DC0A-4381-89EE-4C00AFB08D5A} = {EC0C74AD-C686-48FD-B21D-113F4CB0ED46}
+		{E80721D7-87DD-47D2-9AD9-F1471860AB97} = {8459F575-3C85-4222-A37E-17C4BAD19E6B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FB17E22-08EC-4F67-A1A8-D5391EDDD54D}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://qpc-dev.visualstudio.com/
+		SccProjectUniqueName0 = ..\\UMIS_V2.1\\UMIS_VER2.BusinessLyer\\UMIS_VER2.BusinessLyer.csproj
+		SccProjectTopLevelParentUniqueName0 = UMISHypered.sln
+		SccProjectName0 = $/UMIS_V2.1/UMIS_VER2.BusinessLyer
+		SccAuxPath0 = https://qpc-dev.visualstudio.com
+		SccLocalPath0 = ..\\UMIS_V2.1\\UMIS_VER2.BusinessLyer
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = ..\\UMIS_V2.1\\UMIS_VER2.AccessLayer\\UMIS_VER2.AccessLayer.csproj
+		SccProjectTopLevelParentUniqueName1 = UMISHypered.sln
+		SccProjectName1 = $/UMIS_V2.1/UMIS_VER2.AccessLayer
+		SccAuxPath1 = https://qpc-dev.visualstudio.com
+		SccLocalPath1 = ..\\UMIS_V2.1\\UMIS_VER2.AccessLayer
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = ..\\UMIS_V2.1\\UMIS_VER2.AccessLayer.SqlClient\\UMIS_VER2.AccessLayer.SqlClient.csproj
+		SccProjectTopLevelParentUniqueName2 = UMISHypered.sln
+		SccProjectName2 = $/UMIS_V2.1/UMIS_VER2.AccessLayer.SqlClient
+		SccAuxPath2 = https://qpc-dev.visualstudio.com
+		SccLocalPath2 = ..\\UMIS_V2.1\\UMIS_VER2.AccessLayer.SqlClient
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName3 = ..\\UMIS_V2.1\\UMIS_VER2\\UMIS_VER2.csproj
+		SccProjectTopLevelParentUniqueName3 = UMISHypered.sln
+		SccProjectName3 = $/UMIS_V2.1/UMIS_VER2
+		SccAuxPath3 = https://qpc-dev.visualstudio.com
+		SccLocalPath3 = ..\\UMIS_V2.1\\UMIS_VER2
+		SccProvider3 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+EndGlobal
